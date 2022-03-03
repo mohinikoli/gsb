@@ -1,35 +1,710 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-    <title>List Of Donors</title>
-  </head>
-  <body>
-    
-    <div class="wrapper">
-        <div class="section2">
-            <h1 class="mr-bt5 title">List Of Donors</h1>            
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"> -->
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="index.js"></script>
+
+  <title>Honours List Of Donors</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand " href="index.html">
+            <img src="logo/logo1.png" class="logo">
+          </a>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#performance">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#help">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li>
+                <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+              </li>
+            </ul>
+          </div>
         </div>
-        
+      </nav>
+
+      <!-- modal -->
+      <div class="modal-overlay">
+        <div class="modal">
+
+          <a class="close-modal">
+            <svg viewBox="0 0 20 20">
+              <path fill="#000000"
+                d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+              </path>
+            </svg>
+          </a><!-- close modal -->
+
+          <div class="modal-content">
+            <a class="navbar-brand ">
+              <img src="logo/logo1.png" class="logo1">
+            </a>
+            <ul>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="performance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueHistory.html">League's History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mcp.html">Managing Committe Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueProfile.html">League’s Profile</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="scholership.html">Scholership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">How Can You Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourBankers.html">Our Bankers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contribution.html">Foreign Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="highlights.html">Highlight Of The Month</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="annualReport.html">Annual Report</a>
+              </li>
+            </ul>
+          </div><!-- content -->
+
+        </div><!-- modal -->
+      </div><!-- overlay -->
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <div class="section2">
+      <h1 class="mr-bt5 title">Honours List Of Donors</h1>
+    </div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <div class="container">
+      <div class="mr-tb">
+        <h5>Expression of gratitude</h5>
+        <p>GSB Scholarship League’s Trustees and Managing committee would like to express their gratitude to all
+          generous overseas donors, specially from USA.
+          Our appeal to support the League’s mission to support the education of the needy and poor students has been
+          well received from you.</p>
+        <p>Our special THANKS go to the YOUNG DONOR Master NANDAN PAI, who has gone out of the way to appeal for this
+          noble cause to collect money for the education of these needy students in India He has been a source of
+          inspiration for all of us to work hard for the benefit of the organisation. This exemplary unique effort of
+          NANDAN, under the guidance f his mother Ms.Ajnya Pai, we put on record, so that others get inspired through
+          his untiring hard work.
+          League reserves special gratitude to Dr.Gopal Bhandarkar, Chairman of KCF in USA, who is not only a donor, but
+          did all co ordination work with donors in USA. His work is worth mentioning.</p>
+        <p>League’s special donor from USA Mr.S.N.Pai, who was a One time beneficiary of GSB Scholarship League, by way
+          of returning his gratitude to the League, is Now BIG donor . He has been FULLY supporting the education of
+          needy students and is continuing this tradition. Mr.H.Prabhakar Kamath has been following this tradition.
+        </p>
+        <p>GSB Scholarship League is thankful to all donors, Big or Small.
+        </p>
+        <p>This is to place on record GSB Scholarship League’s gratitude to all donors.
+        </p>
+        <br><br>
+        <p>Following is a list of Endowments, identified by their individual endowment number (FSE, FLSE ) and also the
+          name of the endowment as stipulated by the donor/s in the original Endowment Application Forms, received up to
+          31.03.2017, with a cumulative amount of Rs.1,00,000 and above against each, are arranged in serial number
+          sequence. Also included in the list are donors having several Endowments which in aggregate exceed Rs.
+          1,00,000 as on 31.03.2017</p>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+          <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>$320,800</td>
+                </tr>
+                <tr>
+                    <td>Garrett Winters</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>63</td>
+                    <td>2011/07/25</td>
+                    <td>$170,750</td>
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>66</td>
+                    <td>2009/01/12</td>
+                    <td>$86,000</td>
+                </tr>
+                <tr>
+                    <td>Cedric Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>2012/03/29</td>
+                    <td>$433,060</td>
+                </tr>
+                <tr>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>33</td>
+                    <td>2008/11/28</td>
+                    <td>$162,700</td>
+                </tr>
+                <tr>
+                    <td>Brielle Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>61</td>
+                    <td>2012/12/02</td>
+                    <td>$372,000</td>
+                </tr>
+                <tr>
+                    <td>Herrod Chandler</td>
+                    <td>Sales Assistant</td>
+                    <td>San Francisco</td>
+                    <td>59</td>
+                    <td>2012/08/06</td>
+                    <td>$137,500</td>
+                </tr>
+                <tr>
+                    <td>Rhona Davidson</td>
+                    <td>Integration Specialist</td>
+                    <td>Tokyo</td>
+                    <td>55</td>
+                    <td>2010/10/14</td>
+                    <td>$327,900</td>
+                </tr>
+                <tr>
+                    <td>Colleen Hurst</td>
+                    <td>Javascript Developer</td>
+                    <td>San Francisco</td>
+                    <td>39</td>
+                    <td>2009/09/15</td>
+                    <td>$205,500</td>
+                </tr>
+                <tr>
+                    <td>Sonya Frost</td>
+                    <td>Software Engineer</td>
+                    <td>Edinburgh</td>
+                    <td>23</td>
+                    <td>2008/12/13</td>
+                    <td>$103,600</td>
+                </tr>
+                <tr>
+                    <td>Jena Gaines</td>
+                    <td>Office Manager</td>
+                    <td>London</td>
+                    <td>30</td>
+                    <td>2008/12/19</td>
+                    <td>$90,560</td>
+                </tr>
+                <tr>
+                    <td>Quinn Flynn</td>
+                    <td>Support Lead</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>2013/03/03</td>
+                    <td>$342,000</td>
+                </tr>
+                <tr>
+                    <td>Charde Marshall</td>
+                    <td>Regional Director</td>
+                    <td>San Francisco</td>
+                    <td>36</td>
+                    <td>2008/10/16</td>
+                    <td>$470,600</td>
+                </tr>
+                <tr>
+                    <td>Haley Kennedy</td>
+                    <td>Senior Marketing Designer</td>
+                    <td>London</td>
+                    <td>43</td>
+                    <td>2012/12/18</td>
+                    <td>$313,500</td>
+                </tr>
+                <tr>
+                    <td>Tatyana Fitzpatrick</td>
+                    <td>Regional Director</td>
+                    <td>London</td>
+                    <td>19</td>
+                    <td>2010/03/17</td>
+                    <td>$385,750</td>
+                </tr>
+                <tr>
+                    <td>Michael Silva</td>
+                    <td>Marketing Designer</td>
+                    <td>London</td>
+                    <td>66</td>
+                    <td>2012/11/27</td>
+                    <td>$198,500</td>
+                </tr>
+                <tr>
+                    <td>Paul Byrd</td>
+                    <td>Chief Financial Officer (CFO)</td>
+                    <td>New York</td>
+                    <td>64</td>
+                    <td>2010/06/09</td>
+                    <td>$725,000</td>
+                </tr>
+                <tr>
+                    <td>Gloria Little</td>
+                    <td>Systems Administrator</td>
+                    <td>New York</td>
+                    <td>59</td>
+                    <td>2009/04/10</td>
+                    <td>$237,500</td>
+                </tr>
+                <tr>
+                    <td>Bradley Greer</td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td>41</td>
+                    <td>2012/10/13</td>
+                    <td>$132,000</td>
+                </tr>
+                <tr>
+                    <td>Dai Rios</td>
+                    <td>Personnel Lead</td>
+                    <td>Edinburgh</td>
+                    <td>35</td>
+                    <td>2012/09/26</td>
+                    <td>$217,500</td>
+                </tr>
+                <tr>
+                    <td>Jenette Caldwell</td>
+                    <td>Development Lead</td>
+                    <td>New York</td>
+                    <td>30</td>
+                    <td>2011/09/03</td>
+                    <td>$345,000</td>
+                </tr>
+                <tr>
+                    <td>Yuri Berry</td>
+                    <td>Chief Marketing Officer (CMO)</td>
+                    <td>New York</td>
+                    <td>40</td>
+                    <td>2009/06/25</td>
+                    <td>$675,000</td>
+                </tr>
+                <tr>
+                    <td>Caesar Vance</td>
+                    <td>Pre-Sales Support</td>
+                    <td>New York</td>
+                    <td>21</td>
+                    <td>2011/12/12</td>
+                    <td>$106,450</td>
+                </tr>
+                <tr>
+                    <td>Doris Wilder</td>
+                    <td>Sales Assistant</td>
+                    <td>Sydney</td>
+                    <td>23</td>
+                    <td>2010/09/20</td>
+                    <td>$85,600</td>
+                </tr>
+                <tr>
+                    <td>Angelica Ramos</td>
+                    <td>Chief Executive Officer (CEO)</td>
+                    <td>London</td>
+                    <td>47</td>
+                    <td>2009/10/09</td>
+                    <td>$1,200,000</td>
+                </tr>
+                <tr>
+                    <td>Gavin Joyce</td>
+                    <td>Developer</td>
+                    <td>Edinburgh</td>
+                    <td>42</td>
+                    <td>2010/12/22</td>
+                    <td>$92,575</td>
+                </tr>
+                <tr>
+                    <td>Jennifer Chang</td>
+                    <td>Regional Director</td>
+                    <td>Singapore</td>
+                    <td>28</td>
+                    <td>2010/11/14</td>
+                    <td>$357,650</td>
+                </tr>
+                <tr>
+                    <td>Brenden Wagner</td>
+                    <td>Software Engineer</td>
+                    <td>San Francisco</td>
+                    <td>28</td>
+                    <td>2011/06/07</td>
+                    <td>$206,850</td>
+                </tr>
+                <tr>
+                    <td>Fiona Green</td>
+                    <td>Chief Operating Officer (COO)</td>
+                    <td>San Francisco</td>
+                    <td>48</td>
+                    <td>2010/03/11</td>
+                    <td>$850,000</td>
+                </tr>
+                <tr>
+                    <td>Shou Itou</td>
+                    <td>Regional Marketing</td>
+                    <td>Tokyo</td>
+                    <td>20</td>
+                    <td>2011/08/14</td>
+                    <td>$163,000</td>
+                </tr>
+                <tr>
+                    <td>Michelle House</td>
+                    <td>Integration Specialist</td>
+                    <td>Sydney</td>
+                    <td>37</td>
+                    <td>2011/06/02</td>
+                    <td>$95,400</td>
+                </tr>
+                <tr>
+                    <td>Suki Burks</td>
+                    <td>Developer</td>
+                    <td>London</td>
+                    <td>53</td>
+                    <td>2009/10/22</td>
+                    <td>$114,500</td>
+                </tr>
+                <tr>
+                    <td>Prescott Bartlett</td>
+                    <td>Technical Author</td>
+                    <td>London</td>
+                    <td>27</td>
+                    <td>2011/05/07</td>
+                    <td>$145,000</td>
+                </tr>
+                <tr>
+                    <td>Gavin Cortez</td>
+                    <td>Team Leader</td>
+                    <td>San Francisco</td>
+                    <td>22</td>
+                    <td>2008/10/26</td>
+                    <td>$235,500</td>
+                </tr>
+                <tr>
+                    <td>Martena Mccray</td>
+                    <td>Post-Sales support</td>
+                    <td>Edinburgh</td>
+                    <td>46</td>
+                    <td>2011/03/09</td>
+                    <td>$324,050</td>
+                </tr>
+                <tr>
+                    <td>Unity Butler</td>
+                    <td>Marketing Designer</td>
+                    <td>San Francisco</td>
+                    <td>47</td>
+                    <td>2009/12/09</td>
+                    <td>$85,675</td>
+                </tr>
+                <tr>
+                    <td>Howard Hatfield</td>
+                    <td>Office Manager</td>
+                    <td>San Francisco</td>
+                    <td>51</td>
+                    <td>2008/12/16</td>
+                    <td>$164,500</td>
+                </tr>
+                <tr>
+                    <td>Hope Fuentes</td>
+                    <td>Secretary</td>
+                    <td>San Francisco</td>
+                    <td>41</td>
+                    <td>2010/02/12</td>
+                    <td>$109,850</td>
+                </tr>
+                <tr>
+                    <td>Vivian Harrell</td>
+                    <td>Financial Controller</td>
+                    <td>San Francisco</td>
+                    <td>62</td>
+                    <td>2009/02/14</td>
+                    <td>$452,500</td>
+                </tr>
+                <tr>
+                    <td>Timothy Mooney</td>
+                    <td>Office Manager</td>
+                    <td>London</td>
+                    <td>37</td>
+                    <td>2008/12/11</td>
+                    <td>$136,200</td>
+                </tr>
+                <tr>
+                    <td>Jackson Bradshaw</td>
+                    <td>Director</td>
+                    <td>New York</td>
+                    <td>65</td>
+                    <td>2008/09/26</td>
+                    <td>$645,750</td>
+                </tr>
+                <tr>
+                    <td>Olivia Liang</td>
+                    <td>Support Engineer</td>
+                    <td>Singapore</td>
+                    <td>64</td>
+                    <td>2011/02/03</td>
+                    <td>$234,500</td>
+                </tr>
+                <tr>
+                    <td>Bruno Nash</td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td>38</td>
+                    <td>2011/05/03</td>
+                    <td>$163,500</td>
+                </tr>
+                <tr>
+                    <td>Sakura Yamamoto</td>
+                    <td>Support Engineer</td>
+                    <td>Tokyo</td>
+                    <td>37</td>
+                    <td>2009/08/19</td>
+                    <td>$139,575</td>
+                </tr>
+                <tr>
+                    <td>Thor Walton</td>
+                    <td>Developer</td>
+                    <td>New York</td>
+                    <td>61</td>
+                    <td>2013/08/11</td>
+                    <td>$98,540</td>
+                </tr>
+                <tr>
+                    <td>Finn Camacho</td>
+                    <td>Support Engineer</td>
+                    <td>San Francisco</td>
+                    <td>47</td>
+                    <td>2009/07/07</td>
+                    <td>$87,500</td>
+                </tr>
+                <tr>
+                    <td>Serge Baldwin</td>
+                    <td>Data Coordinator</td>
+                    <td>Singapore</td>
+                    <td>64</td>
+                    <td>2012/04/09</td>
+                    <td>$138,575</td>
+                </tr>
+                <tr>
+                    <td>Zenaida Frank</td>
+                    <td>Software Engineer</td>
+                    <td>New York</td>
+                    <td>63</td>
+                    <td>2010/01/04</td>
+                    <td>$125,250</td>
+                </tr>
+                <tr>
+                    <td>Zorita Serrano</td>
+                    <td>Software Engineer</td>
+                    <td>San Francisco</td>
+                    <td>56</td>
+                    <td>2012/06/01</td>
+                    <td>$115,000</td>
+                </tr>
+                <tr>
+                    <td>Jennifer Acosta</td>
+                    <td>Junior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>43</td>
+                    <td>2013/02/01</td>
+                    <td>$75,650</td>
+                </tr>
+                <tr>
+                    <td>Cara Stevens</td>
+                    <td>Sales Assistant</td>
+                    <td>New York</td>
+                    <td>46</td>
+                    <td>2011/12/06</td>
+                    <td>$145,600</td>
+                </tr>
+                <tr>
+                    <td>Hermione Butler</td>
+                    <td>Regional Director</td>
+                    <td>London</td>
+                    <td>47</td>
+                    <td>2011/03/21</td>
+                    <td>$356,250</td>
+                </tr>
+                <tr>
+                    <td>Lael Greer</td>
+                    <td>Systems Administrator</td>
+                    <td>London</td>
+                    <td>21</td>
+                    <td>2009/02/27</td>
+                    <td>$103,500</td>
+                </tr>
+                <tr>
+                    <td>Jonas Alexander</td>
+                    <td>Developer</td>
+                    <td>San Francisco</td>
+                    <td>30</td>
+                    <td>2010/07/14</td>
+                    <td>$86,500</td>
+                </tr>
+                <tr>
+                    <td>Shad Decker</td>
+                    <td>Regional Director</td>
+                    <td>Edinburgh</td>
+                    <td>51</td>
+                    <td>2008/11/13</td>
+                    <td>$183,000</td>
+                </tr>
+                <tr>
+                    <td>Michael Bruce</td>
+                    <td>Javascript Developer</td>
+                    <td>Singapore</td>
+                    <td>29</td>
+                    <td>2011/06/27</td>
+                    <td>$183,000</td>
+                </tr>
+                <tr>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
+                    <td>New York</td>
+                    <td>27</td>
+                    <td>2011/01/25</td>
+                    <td>$112,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </tfoot>
+        </table>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container txt-White">
+        <div class="row p-b4">
+          <div class="col-md p-t9">
+            <p><i class="fas fa-phone-alt fa-lg"></i>
+              <span class="pd-l txt-grey"> (022)24100048</span></p>
+            <p> <i class="ri-earth-line fs1"></i>
+              <span class="pd-l txt-grey">
+                www.gsbscholarshipleague.org
+              </span>
+            </p>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="home.html">Home</a></li>
+              <li><a class="txt-White" href="performance.html">Performance</a></li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="leagueHistory.html">League’s History</a></li>
+              <li><a class="txt-White" href="mcp.html">Managing Committee Profit</a></li>
+              <li><a class="txt-White" href="leagueProfile.html">League’s Profile</a></li>
+              <li><a class="txt-White" href="scholership.html">Scholarship</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="help.html">How You Can Help</a></li>
+              <li><a class="txt-White" href="ourBankers.html">Our Banker</a></li>
+              <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+              <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+              <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+              <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
+            </ul>
+          </div>
+        </div>
+        <span>Copyright@2008 GSB Scholership League. All rights reserved.</span>
+        <span class="txt-right">Powered by 24 Frames Digital</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

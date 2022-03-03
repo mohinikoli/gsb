@@ -11,117 +11,164 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    
-  <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
+    <script src="index.js"></script>
+    
   <title>Action Plan</title>
 </head>
 
 <body>
 
   <div class="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container">
-        <a class="navbar-brand " href="index.html">
-          <img src="logo/logo1.png" class="logo">
-        </a>
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav justify-content-end">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Performance</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">History</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ">Profit</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ">Contribution</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ">Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ">Contact</a>
-            </li>
-            <li>
-              <button class="menu-icon"><i class="ri-menu-fill "></i></button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- modal -->
-    <div class="modal-overlay">
-      <div class="modal">
-
-        <a class="close-modal">
-          <svg viewBox="0 0 20 20">
-            <path fill="#000000"
-              d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
-            </path>
-          </svg>
-        </a><!-- close modal -->
-
-        <div class="modal-content">
-          <a class="navbar-brand ">
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand " href="index.html">
             <img src="logo/logo1.png" class="logo">
           </a>
-          <ul>
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="performance.html">Performance</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="leagueHistory.html">League's History</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mcp.html">Managing Committe Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="leagueProfile.html">League’s Profile</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="scholership.html">Scholership</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="help.html">How Can You Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ourBankers.html">Our Bankers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contribution.html">Foreign Contribution</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="highlights.html">Highlight Of The Month</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactUs.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="annualReport.html">Annual Report</a>
-            </li>
-          </ul>
-        </div><!-- content -->
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
-      </div><!-- modal -->
-    </div><!-- overlay -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#performance">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#help">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li>
+                <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- modal -->
+      <div class="modal-overlay">
+        <div class="modal">
+
+          <a class="close-modal">
+            <svg viewBox="0 0 20 20">
+              <path fill="#000000"
+                d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+              </path>
+            </svg>
+          </a><!-- close modal -->
+
+          <div class="modal-content">
+            <a class="navbar-brand ">
+              <img src="logo/logo1.png" class="logo1">
+            </a>
+            <ul>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="performance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueHistory.html">League's History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mcp.html">Managing Committe Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueProfile.html">League’s Profile</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="scholership.html">Scholership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">How Can You Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourBankers.html">Our Bankers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contribution.html">Foreign Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="highlights.html">Highlight Of The Month</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="annualReport.html">Annual Report</a>
+              </li>
+            </ul>
+          </div><!-- content -->
+        </div><!-- modal -->
+      </div><!-- overlay -->
+    </div>
+
     <div class="section2">
       <h1 class="mr-bt5 title">Action Plan</h1>
+    </div>
+    <div class="container">
+      <div class="mr-tb">
+        <h5>1. Resource mobilisation:</h5>
+        <p> The League’s Managing Committee has plans to mobilize, substantial resources  in
+          the form of larger Endowments and donations  from individuals and institutions in
+          India and abroad :</p>
+          <ul>
+            <li>Existing  Donors, Life Members and Patrons
+            </li>
+            <li>Enroll new / potential individuals as Patrons and request them for Endowments / donations on a regular basis , at least over the next five years.
+            </li>
+            <li>Enrolling the League’s past scholars as Patrons and seek their active participation in the League’s endeavours to reach a wider section of the GSB community for enhancing the Corpus through Endowments / Donations.
+            </li>
+            <li>Approach the CORPORATE BODIES to adopt the League for financial support under the CSR scheme, EVERY YEAR. League’s holding the following credentials recognised by the government, adds support to be eligible to gain Corporate recognition  under CSR scheme.
+            </li>
+            <ul>
+              <li> Eligibility of the  donations  u/s 80 G 
+              </li>
+              <li>Approval from the Home Ministry, Govt. of India to receive Foreign   
+                Contributions</li>
+            </ul>
+          </ul>
+          <br>
+          
+          <h5>2. Scaling up of disbursement:
+          </h5>
+          <p>It has been League’s continuous effort to grant larger per capita free scholarships to the needy and deserving students. These efforts have been visible during the post Centenary Year 2012. The annual disbursement of free scholarship has grown from Rs 50 lacs in 2012-13 to Rs 61 lacs in 2015-16. This growing trend has one DARK CLOUD over it, caused by the slide in the interest rates in recent times. But it is our hope that substantial growth of the Corpus by way of funds inflow as Endowments and donations will help to scale up the per capita and also increase the number of student beneficiaries year on year.
+          </p>
+          <p>The League aims to enhance the Corpus to over Rs. 10 Crores by 31.03.2018. This will allow for free scholarship disbursement of about Rs.1 crore / year. There after to add to the Corpus at least Rs. Rs 3 crores every year. This will be possible to achieve through CSR support
+          </p>
+          <br>
+
+          <h5>3. Creating awareness about The League:
+          </h5>
+          <p>The League’s efforts to reach larger section of the publiccontinues not only within India but also beyond the shores where there are many institutions who are willing to donate to NGOs like the GSB Scholarship League. We have an impressive history of performance and high credibility of the League, for utilizing the funds towards the sole objective only for education of the underprivileged students, predominantly in the rural sector. Also, accreditation of the League u/s 80 G and FCRA will have the desired impact for selection by the donor institutions.
+
+          </p>
+      </div>
     </div>
     <div class="footer">
       <div class="container txt-White">
@@ -136,28 +183,29 @@
           </div>
           <div class="col-md">
             <ul>
-              <li>Home</li>
-              <li>Performance</li>
-              <li>League’s History</li>
-              <li>Committee Profit</li>
-              <li>League’s Profile</li>
-              <li>Scholership</li>
+                  <li><a class="txt-White" href="home.html">Home</a></li>
+              <li><a class="txt-White" href="performance.html">Performance</a></li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="leagueHistory.html">League’s History</a></li>
+              <li><a class="txt-White" href="mcp.html">Managing Committee Profit</a></li>
+              <li><a class="txt-White" href="leagueProfile.html">League’s Profile</a></li>
+              <li><a class="txt-White" href="scholership.html">Scholarship</a></li>
             </ul>
           </div>
           <div class="col-md">
             <ul>
-              <li>How Can Help</li>
-              <li>Our Banker</li>
-              <li>Highlight of the month</li>
-              <li>Contact Us</li>
-              <li>BalanceSheet</li>
+             <li><a class="txt-White" href="help.html">How You Can Help</a></li>
+              <li><a class="txt-White" href="ourBankers.html">Our Banker</a></li>
+              <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+              <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+              <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
             </ul>
           </div>
           <div class="col-md">
             <ul>
-              <li>Membership</li>
-              <li>Honours List of Donors</li>
-              <li>Action Plan</li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+              <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
             </ul>
           </div>
         </div>

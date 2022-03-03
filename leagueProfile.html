@@ -12,7 +12,15 @@
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="index.js"></script>
+  
   <title>league Profit</title>
 </head>
 
@@ -142,28 +150,29 @@
           </div>
           <div class="col-md">
             <ul>
-              <li>Home</li>
-              <li>Performance</li>
-              <li>League’s History</li>
-              <li>Committee Profit</li>
-              <li>League’s Profile</li>
-              <li>Scholership</li>
+                  <li><a class="txt-White" href="home.html">Home</a></li>
+              <li><a class="txt-White" href="performance.html">Performance</a></li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="leagueHistory.html">League’s History</a></li>
+              <li><a class="txt-White" href="mcp.html">Managing Committee Profit</a></li>
+              <li><a class="txt-White" href="leagueProfile.html">League’s Profile</a></li>
+              <li><a class="txt-White" href="scholership.html">Scholarship</a></li>
             </ul>
           </div>
           <div class="col-md">
             <ul>
-              <li>How Can Help</li>
-              <li>Our Banker</li>
-              <li>Highlight of the month</li>
-              <li>Contact Us</li>
-              <li>BalanceSheet</li>
+             <li><a class="txt-White" href="help.html">How You Can Help</a></li>
+              <li><a class="txt-White" href="ourBankers.html">Our Banker</a></li>
+              <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+              <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+              <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
             </ul>
           </div>
           <div class="col-md">
             <ul>
-              <li>Membership</li>
-              <li>Honours List of Donors</li>
-              <li>Action Plan</li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+              <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
             </ul>
           </div>
         </div>
@@ -177,25 +186,12 @@
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
   </script>
 
-  <script>
-    var elements = $('.modal-overlay, .modal');
-
-    $('.menu-icon').click(function () {
-      // alert('hello');
-      elements.addClass('active');
-    });
-
-    $('.close-modal').click(function () {
-      elements.removeClass('active');
-    });
-  </script>
+ 
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
 
