@@ -9,6 +9,9 @@ $(document).ready(function(){
     $('.close-modal').click(function () {
       elements.removeClass('active');
     });
+<<<<<<< HEAD
        $('#example').DataTable();
 
+=======
+>>>>>>> 5c5e53dbc925bc91fe4cb38e9167a89c8502bf51
 });
