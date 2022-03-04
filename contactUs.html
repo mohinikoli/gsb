@@ -9,31 +9,254 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  
-    <link rel="stylesheet" href="style.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-    <script src="index.js"></script>
-    
+
+  <script src="index.js"></script>
+
   <title>Contact Us</title>
 </head>
 
 <body>
 
   <div class="wrapper">
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand " href="index.html">
+            <img src="logo/logo1.png" class="logo">
+          </a>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#performance">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#help">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li>
+                <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- modal -->
+      <div class="modal-overlay">
+        <div class="modal">
+
+          <a class="close-modal">
+            <svg viewBox="0 0 20 20">
+              <path fill="#000000"
+                d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+              </path>
+            </svg>
+          </a><!-- close modal -->
+
+          <div class="modal-content">
+            <a class="navbar-brand ">
+              <img src="logo/logo1.png" class="logo1">
+            </a>
+            <ul>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="performance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueHistory.html">League's History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mcp.html">Managing Committe Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueProfile.html">League’s Profile</a>
+              </li>
+              <!-- <li class="nav-item ">
+                <a class="nav-link" href="scholership.html">Scholership</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">How Can You Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourBankers.html">Our Bankers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contribution.html">Foreign Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="highlights.html">Highlight Of The Month</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="annualReport.html">Annual Report</a>
+              </li>
+            </ul>
+          </div><!-- content -->
+        </div><!-- modal -->
+      </div><!-- overlay -->
+    </div>
+
     <div class="section2">
       <h1 class="mr-bt5 title">Contact Us</h1>
     </div>
+    <div class="container">
+      <div class="mr-tb">
+        <div class="row" id="contatti">
+          <div class="container mt-5">
 
+            <div class="row" style="height:550px;">
+              <div class="col-md-6">
+                <h2 class="text-uppercase mt-3 font-weight-bold text-white">Contact Us</h2>
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mt-2" placeholder="Name" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control mt-2" placeholder="Email" required>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="number" class="form-control mt-2" placeholder="Phone No" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control mt-2" placeholder="Subject" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="5"
+                          required></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button class="btn btn-light" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="text-white">
+
+                  <p class="pd-bt5"><i class="fas fa-map-marker-alt fa-lg"></i>
+                    <span class="pd-l txt-grey "></span></p>
+                  <h2 class="text-uppercase mt-4 ">Address:</h2>
+
+                  <i class="fas fa-phone-alt fa-lg"></i> <a href=""> (022)24100048</a><br>
+                  <i class="ri-time-line fs1 mt-3"></i> <a href="">10am to 12pm</a><br>
+                  <i class="fal fa-envelope mt-3"></i> <a href="">info@gsbscholarshipleague.org</a><br>
+                  <i class="fas fa-globe mt-3"></i> www.gsbscholarshipleague.org<br>
+                  <i class="fas fa-globe mt-3"></i> The GSB Scholarship League,
+                  Dwaraknath Bhavan,
+                  Katrak Road, Wadala,
+                  Mumbai - 400031<br>
+                  <div class="my-4">
+                    <a href=""><i class="fab fa-facebook fa-3x pr-4"></i></a>
+                    <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 maps">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.0964064800723!2d72.84926511437587!3d19.015473058814905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cedf8992ce69%3A0x452c0ec6f8503f14!2sGSB%20Scholarship%20League!5e0!3m2!1sen!2sin!4v1646380101656!5m2!1sen!2sin"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container txt-White">
+        <div class="row p-b4">
+          <div class="col-md p-t9">
+            <p><i class="fas fa-phone-alt fa-lg"></i>
+              <span class="pd-l txt-grey"> (022)24100048</span></p>
+            <p> <i class="ri-earth-line fs1"></i>
+              <span class="pd-l txt-grey">
+                www.gsbscholarshipleague.org
+              </span></p>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="home.html">Home</a></li>
+              <li><a class="txt-White" href="performance.html">Performance</a></li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="leagueHistory.html">League’s History</a></li>
+              <li><a class="txt-White" href="mcp.html">Managing Committee Profit</a></li>
+              <li><a class="txt-White" href="leagueProfile.html">League’s Profile</a></li>
+              <li><a class="txt-White" href="scholership.html">Scholarship</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="help.html">How You Can Help</a></li>
+              <li><a class="txt-White" href="ourBankers.html">Our Banker</a></li>
+              <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+              <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+              <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+              <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
+            </ul>
+          </div>
+        </div>
+        <span>Copyright@2008 GSB Scholership League. All rights reserved.</span>
+        <span class="txt-right">Powered by 24 Frames Digital</span>
+      </div>
+    </div>
   </div>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
- 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
   </script>
