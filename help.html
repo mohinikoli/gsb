@@ -1,42 +1,239 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-    <script src="index.js"></script>
-    
-    <title>How Can You Help</title>
-  </head>
-  <body>
-    
-    <div class="wrapper">
-        <div class="section2">
-            <h1 class="mr-bt5 title">How Can You Help</h1>            
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>How Can You Help</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand " href="index.html">
+            <img src="logo/logo1.png" class="logo">
+          </a>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#performance">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#help">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li>
+                <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+              </li>
+            </ul>
+          </div>
         </div>
-        
+      </nav>
+
+      <!-- modal -->
+      <div class="modal-overlay">
+        <div class="modal">
+
+          <a class="close-modal">
+            <svg viewBox="0 0 20 20">
+              <path fill="#000000"
+                d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+              </path>
+            </svg>
+          </a><!-- close modal -->
+
+          <div class="modal-content">
+            <a class="navbar-brand ">
+              <img src="logo/logo1.png" class="logo1">
+            </a>
+            <ul>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="performance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueHistory.html">League's History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mcp.html">Managing Committe Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueProfile.html">League’s Profile</a>
+              </li>
+              <!-- <li class="nav-item ">
+                <a class="nav-link" href="scholership.html">Scholership</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">How Can You Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourBankers.html">Our Bankers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contribution.html">Foreign Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="highlights.html">Highlight Of The Month</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="annualReport.html">Annual Report</a>
+              </li>
+            </ul>
+          </div><!-- content -->
+        </div><!-- modal -->
+      </div><!-- overlay -->
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <div class="section2">
+      <h1 class="mr-bt5 title">How Can You Help</h1>
+    </div>
+    <div class="container">
+      <div class="mr-tb">
+        <h4 class="txt-center">The League welcomes Your Contribution!</h4>
+        <br>
+        <h5 class="txt-center">Funds are contributed through one, or more, of the following options</h5>
+        <br>
+        <br>
+        <ul>
+          <li>
+            <h5>A new Endowment in your name or the name of the family members</h5>
+          </li>
+          <p>An Endowment can be started with as little as 5,000/-! The Leagues's present annual disbursement of
+            1,800/- to a school student is funded by the income generated on an amount of close to 25,000/-.</p>
+          <li>
+            <h5>Additional Contribution to your existing Endowment</h5>
+          </li>
+          <p>You are welcome to add any amount to your existing endowment at your discretion. All the funds
+            received
+            as endowments add to the Corpus.</p>
+          <li>
+            <h5>A Donation</h5>
+          </li>
+          <p>Funds received as donations are disbursed to students during the same year.</p>
+          <li>
+            <h5>Contribution to Foregin Loan Scholarship Funds</h5>
+          </li>
+          <p>Loans are made to students who sek funds for their post-graduate education in doreign universities
+            and
+            are arepayable to the League with interest. Donation are collected in multiples of 50,00/-.</p>
+          <li>
+            <h5>Support A Student</h5>
+          </li>
+          <p>Intrested donors may convey theit willingness to fund the full education cost of eligible students who are
+            identifed by the league and pursuing graduate and professional courses.</p>
+        </ul>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+      </div>
+    </div>
+    <div class="pd-bt5">
+      <div class="section3">
+        <p class="para1">All donations or endowments made to the League are eligible for tax relief</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container txt-White">
+        <div class="row p-b4">
+          <div class="col-md p-t9">
+            <p><i class="fas fa-phone-alt fa-lg"></i>
+              <span class="pd-l txt-grey"> (022)24100048</span></p>
+            <p> <i class="ri-earth-line fs1"></i>
+              <span class="pd-l txt-grey">
+                www.gsbscholarshipleague.org
+              </span></p>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="home.html">Home</a></li>
+              <li><a class="txt-White" href="performance.html">Performance</a></li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="leagueHistory.html">League’s History</a></li>
+              <li><a class="txt-White" href="mcp.html">Managing Committee Profit</a></li>
+              <li><a class="txt-White" href="leagueProfile.html">League’s Profile</a></li>
+              <!-- <li><a class="txt-White" href="scholership.html">Scholarship</a></li> -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="help.html">How You Can Help</a></li>
+              <li><a class="txt-White" href="ourBankers.html">Our Banker</a></li>
+              <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+              <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+              <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+              <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
+              <li><a class="txt-White" href="downloadForm.html">Download Form</a></li>
+            </ul>
+          </div>
+        </div>
+        <span>Copyright@2008 GSB Scholership League. All rights reserved.</span>
+        <span class="txt-right">Powered by 24 Frames Digital</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
