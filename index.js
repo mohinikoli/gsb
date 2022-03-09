@@ -9,5 +9,4 @@ $(document).ready(function(){
     $('.close-modal').click(function () {
       elements.removeClass('active');
     });
-       $('#example').DataTable();
 });
