@@ -15,7 +15,6 @@
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" href="modal.html"> -->
   <link rel="stylesheet" href="style.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -24,20 +23,18 @@
 
   <script src="index.js"></script>
 
-  <title>The G.S.B Scholership League's</title>
+  <title>The G.S.B Scholarship League's</title>
 </head>
 
-<body>
+<body id="home">
   <div class="wrapper">
     <!-- Image and text -->
     <div class="menu">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand " href="index.html">
-            <img src="logo/logo1.png" class="logo">
+            <img src="logo/gsb.png" class="logo">
           </a>
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,22 +45,22 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#performance">Performance</a>
+                <a class="nav-link" href="performance.html">Performance</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#history">History</a>
+                <a class="nav-link" href="leagueHistory.html">History</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#profile">Profile</a>
+                <a class="nav-link" href="leagueProfile.html">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Contribution</a>
+                <a class="nav-link" href="#scholarship">Scholarship</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#help">Help</a>
+                <a class="nav-link" href="help.html">Help</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="contactUs.html">Contact</a>
               </li>
               <li>
                 <button class="menu-icon"><i class="ri-menu-fill "></i></button>
@@ -87,7 +84,7 @@
 
           <div class="modal-content">
             <a class="navbar-brand ">
-              <img src="logo/logo1.png" class="logo1">
+              <img src="logo/gsb.png" class="logo1">
             </a>
             <ul>
               <li class="nav-item ">
@@ -106,7 +103,7 @@
                 <a class="nav-link" href="leagueProfile.html">League’s Profile</a>
               </li>
               <!-- <li class="nav-item ">
-                <a class="nav-link" href="scholership.html">Scholership</a>
+                <a class="nav-link" href="Scholarship.html">Scholarship</a>
               </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="help.html">How Can You Help</a>
@@ -133,14 +130,21 @@
     </div>
 
     <div class="sec">
-      <h1 class="title">Helping Each Of Our <br> Students Fulfil the <br> Potential</h1>
+      <div class="title">
+        <p class="txt-animate">
+          <span style="font-size:3vw;">Helping Each Of Our Students</span>
+          <br>
+          <span style="
+            font-size: 4.3vw;
+            font-weight: bold;
+        ">Fulfil the Potential</span>
+        </p>
+      </div>
     </div>
     <div class="container p-t ">
       <div class="row">
         <div class="col-md">
-          <h2>Awesome Feature</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, architecto obcaecati quis
-            porro blanditiis soluta sit neque possimus aperiam magnam delectus ut est cumque laborum.</p>
+          <h2 class="header">Where knowledge is free</h2>          
         </div>
         <div class="col-md">
           <div class="card custom-card txt-center">
@@ -322,9 +326,36 @@
         </div>
       </div>
     </div>
-    <!-- Scholership -->
-    <div class="container-fluid mr-tb no-pd">
-      <h1 class="txt-center mr-bt5">Scholership</h1>
+
+    <!-- counter -->
+    <div class="container">
+      <div class="row">
+        <br />
+        <div class="col text-center">
+          <h2>Members as on 31.03.2016 </h2>
+        </div>
+      </div>
+      <div class="row text-center mr-t2">
+        <div class="col">
+          <div class="counter">
+            <i class="fa fa-coffee fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="2644" data-speed="1500"></h2>
+            <p class="count-text ">No. of Life Members</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="counter">
+            <i class="far fa-lightbulb fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="1481" data-speed="1500"></h2>
+            <p class="count-text ">No. of Patron Members</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scholarship -->
+    <div class="container-fluid mr-tb no-pd" id="scholarship">
+      <h1 class="txt-center mr-bt5">Scholarship</h1>
       <div class="section">
         <p class="para">Year after Year GSB Scholarship League has to express gratitude to Prabhu Family Charitable
           Trust, Specially to Mr.Ajit Prabhu and family for supporting the education of many graduate students. This
@@ -477,20 +508,15 @@
           </div>
           <div class="col-md-4">
             <h4>Address:</h4>
-            <p><i class="fas fa-phone-alt fa-lg"></i>
-              <span class="pd-l txt-grey"> (022)24100048</span></p>
-            <p><i class="ri-time-line fs1"></i><span>10am to 12pm</span></p>
-            <p> <i class="fal fa-envelope fa-lg"></i>
-              <span class="pd-l txt-grey">info@gsbscholarshipleague.org</span></p>
-            <p> <i class="ri-earth-line fs1"></i>
-              <span class="pd-l txt-grey">
-                www.gsbscholarshipleague.org
-              </span></p>
-            <p class="pd-bt5"><i class="fas fa-map-marker-alt fa-lg"></i>
-              <span class="pd-l txt-grey ">The GSB Scholarship League,
-                Dwaraknath Bhavan,
-                Katrak Road, Wadala,
-                Mumbai - 400031</span></p>
+            <i class="fas fa-phone-alt mr-r7"></i><span>(022)24100048</span><br>
+            <i class="far fa-clock mt-3 mr-r7"></i><span>10am to 12pm</span><br>
+            <i class="fal fa-envelope mt-3 mr-r7"></i><span>info@gsbscholarshipleague.org</span><br>
+            <i class="fas fa-globe mt-3 mr-r7"></i><span>www.gsbscholarshipleague.org</span><br>
+            <i class="fas fa-globe mt-3 mr-r7"></i><span>The GSB Scholarship League,
+              Dwaraknath Bhavan,
+              Katrak Road, Wadala,
+              Mumbai - 400031.
+            </span>
           </div>
         </div>
       </div>
@@ -500,10 +526,11 @@
     <div class="footer">
       <div class="container txt-White">
         <div class="row p-b4">
-          <div class="col-md p-t9">
-            <p><i class="fas fa-phone-alt fa-lg"></i>
+          <div class="col-md">
+            <img src="logo/gsb.png" width="70%">
+            <p class="no-mr p-t2"><i class="fas fa-phone-alt"></i>
               <span class="pd-l txt-grey"> (022)24100048</span></p>
-            <p> <i class="ri-earth-line fs1"></i>
+            <p class="no-mr"> <i class="fas fa-globe"></i>
               <span class="pd-l txt-grey">
                 www.gsbscholarshipleague.org
               </span></p>
@@ -512,18 +539,16 @@
             <ul>
               <li><a class="txt-White" href="home.html">Home</a></li>
               <li><a class="txt-White" href="performance.html">Performance</a></li>
-              <li><a class="txt-White" href="membership.html">Membership</a></li>
               <li><a class="txt-White" href="leagueHistory.html">League’s History</a></li>
               <li><a class="txt-White" href="mcp.html">Managing Committee Profit</a></li>
               <li><a class="txt-White" href="leagueProfile.html">League’s Profile</a></li>
-              <!-- <li><a class="txt-White" href="scholership.html">Scholarship</a></li> -->
-
             </ul>
           </div>
           <div class="col-md">
             <ul>
               <li><a class="txt-White" href="help.html">How You Can Help</a></li>
               <li><a class="txt-White" href="ourBankers.html">Our Banker</a></li>
+              <li><a class="txt-White" href="contribution.html">Foreign Contribution</a></li>
               <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
               <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
               <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
@@ -538,10 +563,12 @@
             </ul>
           </div>
         </div>
-        <span>Copyright@2008 GSB Scholership League. All rights reserved.</span>
+        <span>Copyright@2008 GSB Scholarship League. All rights reserved.</span>
         <span class="txt-right">Powered by 24 Frames Digital</span>
       </div>
     </div>
+    <span class="scroll-top-arrow" style="display: inline-block;"><a href="#home"><i class="fas fa-angle-up"></i></a></span>
+   
   </div>
 
 
