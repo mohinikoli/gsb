@@ -69,7 +69,7 @@ body {
 }
 
 .logo1 {
-  width: 30%;
+  width: 21%;
 }
 
 .txt-White {
@@ -117,6 +117,15 @@ body {
   font-weight: 500;
 }
 
+.btitle {
+  font-size: 3vw;
+}
+
+.btitle1 {
+  font-size: 4.3vw;
+  font-weight: bold;
+}
+
 .txt-right {
   float: right;
 }
@@ -132,6 +141,7 @@ a:hover {
   border: 0;
   padding: 0;
   height: 70px;
+  width: 100%;
   background-image: none;
 }
 
@@ -218,6 +228,7 @@ a:hover {
   display: flex;
   font-weight: 300;
   justify-content: center;
+  background-size: cover;
 }
 
 .title .btn-blue {
@@ -243,6 +254,7 @@ a:hover {
   /* box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px; */
   height: 270px;
   padding: 5%;
+  overflow: hidden;
   box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease-out;
   text-decoration: none;
@@ -260,7 +272,7 @@ a:hover {
 h2,
 .header {
   padding-top: 15px;
-  font-size: 2.5rem;
+  font-size: 3vw;
   text-transform: capitalize;
 }
 
@@ -443,13 +455,17 @@ h2,
   height: 633px;
   width: 100%;
   background-size: cover;
+  position: relative;
 }
 
 .para {
   font-size: 1.5vw;
   padding: 9%;
-  width: 50%;
-  float: right;
+  /* width: 50%; */
+  /* float: right; */
+  /* top: 20%; */
+  left: 50%;
+  position: absolute;
 }
 
 /* 
@@ -1080,9 +1096,9 @@ a.animated-button:before {
 }
 
 .count-title {
-  font-size: 40px;
+  /* font-size: 40px; */
   font-weight: normal;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 0;
   text-align: center;
 }
@@ -1109,6 +1125,251 @@ a.animated-button:before {
   animation-duration: 2s;
 }
 
+/* .btitle {
+  font-size:5vw;
+} */
+
 .show {
   display: block;
 }
+
+
+
+
+/* media query */
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h1 {
+    color: red;
+  }
+
+  h2 {
+    color: rgb(111, 0, 255)
+  }
+
+  .custom-card {
+    padding: 3%;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .count-title {
+    font-size: 27px;
+  }
+
+  .section {
+    position: relative;
+    background-size: 200%;
+  }
+
+  .para {
+    font-size: 2.7vw;
+    position: absolute;
+    width: 79%;
+    left: 10%;
+    top: 10%;
+    background: #fff;
+  }
+
+  .section2 {
+    height: 400px;
+  }
+
+  .circle-card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .border-blue {
+    border: 5px solid #234686;
+  }
+
+  .border-purple {
+    border: 5px solid #236694;
+  }
+
+  a.animated-button {
+    font-size: 2.5vw;
+    min-width: 35%;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  /* body {
+    font-size: 8px;
+  } */
+
+  h1 {
+    color: green;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+  a.animated-button {
+    font-size: 2.5vw;
+    min-width: 35%;
+  }
+
+  .btitle {
+    font-size: 5vw;
+  }
+
+  .btitle1 {
+    font-size: 7.5vw;
+    font-weight: bold;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  h1 {
+    color: red;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  h1 {
+    color: blue;
+  }
+
+  h2 {
+    color: rgb(141, 141, 69)
+  }
+
+  .logo {
+    width: 33%;
+    margin-left: 10px;
+  }
+
+  h2,
+  .header {
+    font-size: 7vw;
+    margin-bottom: 35px;
+  }
+
+  .circle-card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .border-blue {
+    border: 5px solid #234686;
+  }
+
+  .border-purple {
+    border: 5px solid #236694;
+  }
+
+  /* .title {
+    font-size: 7.5vw;
+  } */
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .iconWrap {
+    margin-top: -70px;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  .custom-card {
+    margin-bottom: 12px;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  .para {
+    font-size: 2.9vw;
+    position: absolute;
+    width: 79%;
+    left: 10%;
+    top: 10%;
+    background: #fff;
+  }
+
+  .section {
+    height: 355px;
+  }
+
+  .btn-change2 {
+    font-size: 4vw;
+  }
+
+  .btitle {
+    font-size: 5vw;
+  }
+
+  .btitle1 {
+    font-size: 7.5vw;
+    font-weight: bold;
+  }
+
+  .circle-logo i {
+    font-size: 1.7em;
+  }
+
+  .p-t2 {
+    padding-top: 3%;
+  }
+
+  .footer {
+    height: 600px;
+    padding: 2% 0;
+  }
+
+  .footer img {
+    width: 80%;
+  }
+
+  .footer span {
+    font-size: 2.6vw;
+  }
+
+  .footer ul li a {
+    font-size: 2.6vw;
+  }
+
+  nav.navbar .navbar-toggle {
+    display: none;
+  }
+
+  .sec2 {
+    height: auto;
+  }
+
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
