@@ -34,6 +34,7 @@
     <div class="menu">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
+         
           <a class="navbar-brand " href="index.html">
             <img src="logo/gsb.png" class="logo">
           </a>
@@ -61,10 +62,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="contactUs.html">Contact</a>
               </li>
-              <li>
+             <!-- <li>
                 <button class="menu-icon"><i class="ri-menu-fill "></i></button>
-              </li>
+              </li> -->
             </ul>
+          </div>
+          <div>
+            <button class="menu-icon"><i class="ri-menu-fill "></i></button>
           </div>
         </div>
       </nav>
@@ -146,7 +150,7 @@
           <h2 class="header text-center">Where knowledge is free</h2>
         </div>
         <div class="col-md-4 col-xl-3 col-md-3">
-          <div class="card custom-card txt-center">
+          <div class="card custom-card text-center mb-3">
             <div class="card-body">
               <p>
                 <i class="ri-checkbox-multiple-blank-fill icon"></i></p>
@@ -157,7 +161,7 @@
           </div>
         </div>
         <div class="col-md-4 col-xl-3 col-md-3">
-          <div class="card custom-card txt-center">
+          <div class="card custom-card text-center mb-3">
             <div class="card-body">
               <p>
                 <i class="ri-edit-box-line icon"></i></p>
@@ -168,7 +172,7 @@
           </div>
         </div>
         <div class="col-md-4 col-xl-3 col-md-3">
-          <div class="card custom-card txt-center">
+          <div class="card custom-card text-center mb-3">
             <div class="card-body">
               <p>
                 <i class="ri-lightbulb-line icon"></i></p>
@@ -185,18 +189,18 @@
       <div class="mr-bt5">
         <div class="row">
           <div class="col-md-6 col-xl-6">
-            <img src="imgs/charts/chart1.jpg" alt="" class="mb-3" width="100%">
+            <img src="imgs/charts/chart1.jpg" alt="" class="mb-3 img-fluid" width="100%">
           </div>
           <div class="col-md-6 col-xl-6">
-            <img src="imgs/charts/chart2.jpg" alt="" class="mb-3" width="100%">
+            <img src="imgs/charts/chart2.jpg" alt="" class="mb-3 img-fluid" width="100%">
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-xl-6">
-            <img src="imgs/charts/chart3.jpg" alt="" class="mb-3" width="100%">
+            <img src="imgs/charts/chart3.jpg" alt="" class="mb-3 img-fluid" width="100%">
           </div>
           <div class="col-md-6 col-xl-6">
-            <img src="imgs/charts/chart4.jpg" alt="" class="mb-3" width="100%">
+            <img src="imgs/charts/chart4.jpg" alt="" class="mb-3 img-fluid" width="100%">
           </div>
         </div>
       </div>
@@ -214,8 +218,8 @@
         <h4 class="txt-center pd-tb">List of Trustees and Managaing Committee members as on 27th July 2021
         </h4>
         <div class="container">
-          <div class="mcp-data">
-            <div class="table-responsive">
+          <div class="table-responsive" style="height: 400px; overflow-y: scroll">
+            <!-- <div class="mcp-data"> -->
               <table class="table table-fixed">
                 <thead>
                   <tr>
@@ -324,7 +328,7 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -372,18 +376,18 @@
     <div class="container txt-center mr-bt5" id="history">
       <h1 class="mr-bt5">League History</h1>
       <div class="row">
-        <div class="col-sm mr-t2">
+        <div class="col-md-4 col-xl-4 mt-4">
           <div class="card custom-card bdr-bt-blue">
             <div class="card-body">
               <!-- <h5 class="card-title">Special title treatment</h5> -->
               <p class="card-text"> In 1912, Gopal Subrao Dangi, Dr. Narayan Anna Naik, Madhavrao Vasudev Bhat,
-                Sheshgiri Manjunath Kamat, Martobrao Durgappa Gaitonde, Vinayak Srinivas Kamat,</p>
+                Sheshgiri Manjunath Kamat, Martobrao Durgappa Gaitonde, Vinayak Srinivas Kamat,Ramachandra Krishna Prabhu.</p>
               <!-- <a href="leagueHistory.html" class="btn animated-button mr-t2">Read More</a> -->
               <button class="btn-change2"><a href="leagueHistory.html">Read More</a></button>
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col-md-4 col-xl-4">
           <div class="card custom-card bdr-bt-purple">
             <div class="card-body">
               <!-- <h5 class="card-title">Special title treatment</h5> -->
@@ -394,7 +398,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm mr-t2">
+        <div class="col-md-4 col-xl-4 mt-4">
           <div class="card custom-card bdr-bt-yellow">
             <div class="card-body">
               <!-- <h5 class="card-title">Special title treatment</h5> -->
@@ -413,38 +417,37 @@
       <div class="section2">
         <h1 class="mr-bt5 title">How You Can Help</h1>
       </div>
-    </div>
-    <div class="container">
-      <div class="mr-tb">
-        <div class="row">
-          <div class="iconWrap">
-            <div class="col-md-3 col-xl-3 col-6">
-              <div class="circle-card">
-                <div class="circle-logo border-blue">
-                  <i class="ri-notification-line"></i>
+      <div class="container">
+        <div class="mr-tb">
+          <div class="row">
+            <div class="iconWrap">
+              <div class="col-md-3 col-xl-3 col">
+                <div class="circle-card">
+                  <div class="circle-logo border-blue">
+                    <i class="ri-notification-line"></i>
+                  </div>
+                </div>
+                <div class="text-Wrap">
+                  <h3>New Endowment</h3>
+                  <p>An Endowment can be started with as little as 5,000/-! The Leagues's present annual disbursement of
+                    1,800/- to a school student is funded by the income generated on an amount of close to 25,000/-.
+                  </p>
                 </div>
               </div>
-              <div class="text-Wrap">
-                <h3>New Endowment</h3>
-                <p>An Endowment can be started with as little as 5,000/-! The Leagues's present annual disbursement of
-                  1,800/- to a school student is funded by the income generated on an amount of close to 25,000/-.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-xl-3 col-6">
-              <div class="circle-card bg-yellow">
-                <div class="circle-logo border-purple">
-                  <i class="ri-book-line"></i>
+              <div class="col-md-3 col-xl-3 col">
+                <div class="circle-card bg-yellow">
+                  <div class="circle-logo border-purple">
+                    <i class="ri-book-line"></i>
+                  </div>
+                </div>
+                <div class="text-Wrap">
+                  <h3>Contribution</h3>
+                  <p>You are welcome to add any amount to your existing endowment at your discretion. All the funds
+                    received
+                    as endowments add to the Corpus.</p>
                 </div>
               </div>
-              <div class="text-Wrap">
-                <h3>Contribution</h3>
-                <p>You are welcome to add any amount to your existing endowment at your discretion. All the funds
-                  received
-                  as endowments add to the Corpus.</p>
-              </div>
-            </div>
-            <!-- <div class="col-md-3 col-xl-3 col-6">
+              <div class="col-md-3 col-xl-3 col">
               <div class="circle-card">
                 <div class="circle-logo border-blue">
                   <i class="ri-contacts-line"></i>
@@ -455,7 +458,7 @@
                 <p>Funds received as donations are disbursed to students during the same year.</p>
               </div>
             </div>
-            <div class="col-md-3 col-xl-3 col-6">
+            <div class="col-md-3 col-xl-3 col">
               <div class="circle-card bg-yellow">
                 <div class="circle-logo border-purple">
                   <i class="ri-pages-line"></i>
@@ -466,111 +469,112 @@
                 <p>Loans are made to students who sek funds for their post-graduate education in doreign universities
                   and
                   are arepayable to the League with interest. Donation are collected in multiples of 50,00/-.</p>
-              </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="help.html" class="btn animated-button">View All</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- contact us -->
+    <div class="container-fluid pd-tb no-pd bg-grey">
+      <h1 class="txt-center mr-bt5">Contact Us</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col md-8">
+            <form>
+              <div class="form-group">
+                <!-- <label for="exampleFormControlTextarea1">Enter Message</label> -->
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                  placeholder="Enter Message"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <!-- <label for="exampleInputEmail1">Enter Your Name</label> -->
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Your Name">
+                </div>
+                <div class="col-md-6 form-group">
+                  <!-- <label for="exampleInputEmail1">Enter Email address</label> -->
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Email address">
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <label for="exampleInputSubject">Enter Subject</label> -->
+                <input type="email" class="form-control" id="exampleInputSubject" aria-describedby="emailHelp"
+                  placeholder="Enter Subject">
+              </div>
+              <div class="txt-center">
+                <a href="performance.html" class="btn animated-button mr-t2">Submit</a>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h4>Address:</h4>
+            <i class="fas fa-phone-alt mr-r7"></i><span>(022)24100048</span><br>
+            <i class="far fa-clock mt-3 mr-r7"></i><span>10am to 12pm</span><br>
+            <i class="fal fa-envelope mt-3 mr-r7"></i><span>info@gsbscholarshipleague.org</span><br>
+            <i class="fas fa-globe mt-3 mr-r7"></i><span>www.gsbscholarshipleague.org</span><br>
+            <i class="fas fa-globe mt-3 mr-r7"></i><span>The GSB Scholarship League,
+              Dwaraknath Bhavan,
+              Katrak Road, Wadala,
+              Mumbai - 400031.
+            </span>
           </div>
         </div>
       </div>
-      <div class="text-center">
-        <a href="help.html" class="btn animated-button">View All</a>
-      </div>
     </div>
-  </div>
-  <!-- contact us -->
-  <div class="container-fluid pd-tb no-pd bg-grey">
-    <h1 class="txt-center mr-bt5">Contact Us</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col md-8">
-          <form>
-            <div class="form-group">
-              <!-- <label for="exampleFormControlTextarea1">Enter Message</label> -->
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                placeholder="Enter Message"></textarea>
-            </div>
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <!-- <label for="exampleInputEmail1">Enter Your Name</label> -->
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Enter Your Name">
-              </div>
-              <div class="col-md-6 form-group">
-                <!-- <label for="exampleInputEmail1">Enter Email address</label> -->
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Enter Email address">
-              </div>
-            </div>
-            <div class="form-group">
-              <!-- <label for="exampleInputSubject">Enter Subject</label> -->
-              <input type="email" class="form-control" id="exampleInputSubject" aria-describedby="emailHelp"
-                placeholder="Enter Subject">
-            </div>
-            <div class="txt-center">
-              <a href="performance.html" class="btn animated-button mr-t2">Submit</a>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-4">
-          <h4>Address:</h4>
-          <i class="fas fa-phone-alt mr-r7"></i><span>(022)24100048</span><br>
-          <i class="far fa-clock mt-3 mr-r7"></i><span>10am to 12pm</span><br>
-          <i class="fal fa-envelope mt-3 mr-r7"></i><span>info@gsbscholarshipleague.org</span><br>
-          <i class="fas fa-globe mt-3 mr-r7"></i><span>www.gsbscholarshipleague.org</span><br>
-          <i class="fas fa-globe mt-3 mr-r7"></i><span>The GSB Scholarship League,
-            Dwaraknath Bhavan,
-            Katrak Road, Wadala,
-            Mumbai - 400031.
-          </span>
-        </div>
-      </div>
-    </div>
+    <!-- </div> -->
 
-  </div>
-
-  <div class="footer">
-    <div class="container txt-White">
-      <div class="row p-b4">
-        <div class="col-md-3 col-6">
-          <img src="logo/gsb.png" width="70%">
-          <p class="no-mr p-t2"><i class="fas fa-phone-alt"></i>
-            <span class="pd-l txt-grey"> (022)24100048</span></p>
-          <p class="no-mr"> <i class="fas fa-globe"></i>
-            <span class="pd-l txt-grey">
-              www.gsbscholarshipleague.org
-            </span></p>
+    <div class="footer">
+      <div class="container txt-White">
+        <div class="row p-b4">
+          <div class="col-md-3 col-6">
+            <img src="logo/gsb.png" width="70%">
+            <p class="no-mr p-t2"><i class="fas fa-phone-alt"></i>
+              <span class="pd-l txt-grey"> (022)24100048</span></p>
+            <p class="no-mr"> <i class="fas fa-globe"></i>
+              <span class="pd-l txt-grey">
+                www.gsbscholarshipleague.org
+              </span></p>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li><a class="txt-White" href="home.html">Home</a></li>
+              <li><a class="txt-White" href="performance.html">Performance</a></li>
+              <li><a class="txt-White" href="leagueHistory.html">League’s History</a></li>
+              <li><a class="txt-White" href="mcp.html">Managing Committee Profit</a></li>
+              <li><a class="txt-White" href="leagueProfile.html">League’s Profile</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li><a class="txt-White" href="help.html">How You Can Help</a></li>
+              <li><a class="txt-White" href="ourBankers.html">Our Banker</a></li>
+              <li><a class="txt-White" href="contribution.html">Foreign Contribution</a></li>
+              <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+              <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+              <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+              <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
+              <li><a class="txt-White" href="downloadForm.html">Download Form</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-3 col-6">
-          <ul>
-            <li><a class="txt-White" href="home.html">Home</a></li>
-            <li><a class="txt-White" href="performance.html">Performance</a></li>
-            <li><a class="txt-White" href="leagueHistory.html">League’s History</a></li>
-            <li><a class="txt-White" href="mcp.html">Managing Committee Profit</a></li>
-            <li><a class="txt-White" href="leagueProfile.html">League’s Profile</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6">
-          <ul>
-            <li><a class="txt-White" href="help.html">How You Can Help</a></li>
-            <li><a class="txt-White" href="ourBankers.html">Our Banker</a></li>
-            <li><a class="txt-White" href="contribution.html">Foreign Contribution</a></li>
-            <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
-            <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
-            <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6">
-          <ul>
-            <li><a class="txt-White" href="membership.html">Membership</a></li>
-            <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
-            <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
-            <li><a class="txt-White" href="downloadForm.html">Download Form</a></li>
-          </ul>
-        </div>
+        <span>Copyright@2008 GSB Scholarship League. All rights reserved.</span>
+        <span class="txt-right">Powered by 24 Frames Digital</span>
       </div>
-      <span>Copyright@2008 GSB Scholarship League. All rights reserved.</span>
-      <span class="txt-right">Powered by 24 Frames Digital</span>
     </div>
-  </div>
-  <span class="scroll-top-arrow"><a><i class="fas fa-angle-up"></i></a></span>
+    <span class="scroll-top-arrow"><a><i class="fas fa-angle-up"></i></a></span>
 
   </div>
 

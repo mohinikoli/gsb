@@ -401,6 +401,7 @@ h2,
   bottom: -50px;
   left: 6%;
   margin-top: -135px;
+  flex-direction: row;
 }
 
 .circle-card {
@@ -738,6 +739,10 @@ h2,
     border-radius: 6px 6px 0 0;
     margin: 0;
   }
+}
+
+.table-responsive {
+  display: table;
 }
 
 @-webkit-keyframes fillLeft {
@@ -1184,6 +1189,7 @@ a.animated-button:before {
   .circle-card {
     width: 80px;
     height: 80px;
+    margin: auto;
   }
 
   .circle-logo {
@@ -1203,6 +1209,26 @@ a.animated-button:before {
     font-size: 2.5vw;
     min-width: 35%;
   }
+
+  .menu-icon {
+    font-size: 2.7vw;
+  }
+  .footer span {
+    font-size: 1.5vw;
+  }
+
+  .footer ul li {
+    line-height: 0.7;
+
+  }
+
+  .footer ul li a {
+    font-size: 2.6vw;
+  }
+
+  .footer p i {
+    font-size: 3vw;
+  }
 }
 
 /* For Mobile Portrait View */
@@ -1221,7 +1247,9 @@ a.animated-button:before {
 
   a.animated-button {
     font-size: 2.5vw;
-    min-width: 35%;
+    margin-left: 2%;
+    margin-right: 0;
+    /* min-width: 35%; */
   }
 
   .btitle {
@@ -1232,6 +1260,16 @@ a.animated-button:before {
     font-size: 7.5vw;
     font-weight: bold;
   }
+
+  /* .menu-icon {
+    position: absolute;
+    right: 30%;
+    bottom: 8%;
+    font-size: 4vh;
+  } */
+  .table-responsive {
+    display: block;
+}
 }
 
 /* For Mobile Landscape View */
@@ -1265,6 +1303,7 @@ a.animated-button:before {
   .circle-card {
     width: 80px;
     height: 80px;
+    margin: auto;
   }
 
   .circle-logo {
@@ -1300,9 +1339,9 @@ a.animated-button:before {
     margin-bottom: 12px;
   }
 
-  h4 {
-    font-size: 4vw;
-  }
+  /* h4 {
+    font-size: 5vw;
+  } */
 
   .para {
     font-size: 2.9vw;
@@ -1339,7 +1378,7 @@ a.animated-button:before {
   }
 
   .footer {
-    height: 600px;
+    height: 250px;
     padding: 2% 0;
   }
 
@@ -1351,11 +1390,20 @@ a.animated-button:before {
     font-size: 2.6vw;
   }
 
+  .footer ul li {
+    line-height: 0.7;
+
+  }
+
   .footer ul li a {
     font-size: 2.6vw;
   }
 
-  nav.navbar .navbar-toggle {
+  .footer p i {
+    font-size: 3vw;
+  }
+
+  .navbar-light .navbar-toggler {
     display: none;
   }
 
@@ -1363,6 +1411,54 @@ a.animated-button:before {
     height: auto;
   }
 
+  span {
+    font-size: 3.5vw;
+  }
+
+  .mcp-data {
+    height: auto;
+  }
+
+  .iconWrap {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .logo1 {
+    width: 50%;
+    margin-bottom: 13%;
+  }
+
+  .menu-icon {
+    position: absolute;
+    right: 5%;
+    bottom: 9%;
+    font-size: 4vh;
+  }
+
+  .modal-content ul {
+    padding: 0;
+  }
+
+  .modal-content ul li {
+    padding: 0.7rem;
+  }
+
+  .nav-link {
+    font-size: 2.7vw;
+    padding: 0;
+  }
+  .section2{
+    height: 300px;
+  }
+  .title{
+    height: 117%;
+    font-size: 7.5vw;
+  }
+  .table-responsive {
+    display: block;
+}
 }
 
 /* For iPhone 4 Portrait or Landscape View */
