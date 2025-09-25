@@ -1,0 +1,2615 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="100x100" href="images/favicon-96x96.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+  <title>Honours List Of Donors</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand " href="index.html">
+            <img src="images/logo/gsb.png" class="logo">
+          </a>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="performance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueHistory.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueProfile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact</a>
+              </li>
+              <!-- <li>
+                <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+              </li> -->
+            </ul>
+          </div>
+          <div>
+            <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- modal -->
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="menuModal">
+
+          <a class="close-modal" id="closeModal">
+            <svg viewBox="0 0 20 20">
+              <path fill="#000000"
+                d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+              </path>
+            </svg>
+          </a><!-- close modal -->
+
+          <div class="modal-content" id="modalContent">
+            <a class="navbar-brand ">
+              <img src="images/logo/gsb.png" class="logo1">
+            </a>
+            <ul>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="performance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueHistory.html">League's History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mcp.html">Managing Committe Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueProfile.html">League's Profile</a>
+              </li>
+              <!-- <li class="nav-item ">
+                <a class="nav-link" href="Scholarship.html">Scholarship</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">How Can You Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourBankers.html">Our Bankers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contribution.html">Foreign Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="highlights.html">Highlight Of The Month</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="annualReport.html">Annual Report</a>
+              </li>
+            </ul>
+          </div><!-- content -->
+
+        </div><!-- modal -->
+      </div><!-- overlay -->
+    </div>
+
+    <div class="section2">
+      <h1 class="mr-bt5 title">Honours List Of Donors</h1>
+    </div>
+
+    <div class="container">
+      <div class="mr-tb">
+            <h1 class="">The GSB Scholarship League is happy to announce that it has been given  the permission from the Home Ministry to accept donations from abroad.</h1>
+        <br>
+        <div class="">
+          <h4>League’s FCRA Registration</h4>
+          <p>Registration No.: <b>083780232</b></p>
+          <p>Validity: <b>01.11.2021 to 31.10.2026</b></p>
+          <p>Bank Account: <b>Savings Bank Account no. 40258078805</b></p>
+          <p>Bank and Branch: <b>State Bank of India, 11, Sansad Marg, New Delhi – 110 001</b></p>
+          <p>Branch Code: <b>00691</b></p>
+          <p>IFSC Code: <b>SBIN0000691</b></p>
+          <p>Swift Code: <b>SBINNBB104</b></p>
+        </div>
+        <br>
+        
+        <h4>Making a Difference Together</h4>
+        <br>
+        <h5>Why Your Support Matters</h5>
+        <p>Every donation—big or small—makes a <b>direct and measurable difference</b>. Our scholarships do more than
+          help in covering the fees, they <b>restore dignity, spark ambition, and open doors</b> to a future filled with
+          promise. Events like PILLARS OF STRENGTH not only connect donors with the real people they impact but also
+          reaffirm the shared values that hold our community together.</p>
+        <br>
+        <h5>Join Us</h5>
+        <p>We invite you to become part of this life-changing journey. Your support could fund a student's future,
+          uplift an entire family, and contribute to the progress of our GSB community.</p>
+
+        <p>If you would like to:</p>
+
+        <ul>
+          <li>Sponsor a student</li>
+          <li>Set up a named scholarship in memory of a loved one / a memorable event in your life.</li>
+        </ul>
+
+
+        <p>Together, let us build a future where no deserving student is denied education due to financial hardship.</p>
+        <br>
+        <h4><strong>THE GSB SCHOLARSHIP LEAGUE
+            Honours List of Donors (As on 31.03.2024)</strong></h4>
+
+        <p> Following is a list of Endowmentsw identified by their individual endowment number
+          (FSE, FLSE)Donors and also the name of the endowment as stipulatd by the donor/s in
+          the original endowment Application Forms, received upto 31.03.2024 with a cumulative
+          amount of Rs. 1,00,000 and above against each are arranged in serial number sequence.</p>
+
+        <p>&nbsp;</p>
+
+        <table border="1" id="example" class="display table-responsive" style="width:100%">
+          <thead>
+            <tr>
+              <th><strong>FSE NO.</strong></th>
+              <th><strong>Name of the Endowment.</strong></th>
+              <th><strong>Name of Donor /s</strong></th>
+              <th><strong>Total Rs.</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9</td>
+              <td>Karkal Kondandram Joishy & Shri Sudhakar N. Joshi</td>
+              <td>Smt. Anandi Kodandram Joishy, Shri Ashok N. Joshi, Smt. Lata A. Joshi</td>
+              <td>1,07,500</td>
+            </tr>
+            <tr>
+              <td>171</td>
+              <td>Kamakshi Laxmanrao Sonde Trust</td>
+              <td>Sirsi Urban Sahakari Bank Ltd</td>
+              <td>1,46,872</td>
+            </tr>
+            <tr>
+              <td>204</td>
+              <td>The GSB Sarvajanik Ganeshotsav Samiti, Wadala</td>
+              <td>Self</td>
+              <td>7,89,030</td>
+            </tr>
+            <tr>
+              <td>206</td>
+              <td>Shri Sheshagiri Balkrishnarao Sonde & Smt. Anupamabai Sonde</td>
+              <td>Dr. Vaikunth Sheshagirirao Sonde</td>
+              <td>1,01,500</td>
+            </tr>
+            <tr>
+              <td>290</td>
+              <td>Late Smt. Laxmibai Nagesh Naik</td>
+              <td>Shri Raghuveer Naik, Brothers & Smt. Sarika Ashish Pherwani, Priyanka Kartik Rishi</td>
+              <td>2,72,004</td>
+            </tr>
+            <tr>
+              <td>415</td>
+              <td>Shri Ramchandraz Shenoy & Smt. Tulsi Ramchandra Shenoy</td>
+              <td>Smt. Mukta Sudhakar Joshi - Daughter</td>
+              <td>1,04,000</td>
+            </tr>
+            <tr>
+              <td>427</td>
+              <td>Smt. Saraswati & Shri Narayan Vyasaray Bhatt (Datta Bhatt), Mumbai</td>
+              <td>Shri Venkatesh Narayan Bhatt</td>
+              <td>1,65,000</td>
+            </tr>
+            <tr>
+              <td>511</td>
+              <td>The N.K.G.S.B. Co-op Bank Ltd Endowment</td>
+              <td>The N.K.G.S.B. Co-op. Bank Ltd</td>
+              <td>1,20,000</td>
+            </tr>
+            <tr>
+              <td>644</td>
+              <td>Late Smt. Sundaribai Manjunath Kamath</td>
+              <td>Dr. Padmanabh M. Kamath</td>
+              <td>1,40,000</td>
+            </tr>
+            <tr>
+              <td>671</td>
+              <td>Late Shri Malpe Madhav Narasimha Pai</td>
+              <td>His son Shri Marthappa Madhav Pai</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>795</td>
+              <td>Shri Hanumanthrao Manjrekar</td>
+              <td>Shri Kamalaksha Hanumanthrao Manjrekar (son)</td>
+              <td>1,33,000</td>
+            </tr>
+            <tr>
+              <td>796</td>
+              <td>Smt. Manjula H. Manjrekar</td>
+              <td>Shri Kamalaksha Hanumanthrao Manjrekar (son)</td>
+              <td>1,33,000</td>
+            </tr>
+            <tr>
+              <td>800B</td>
+              <td>Late Smt. Meera Prabhakar Narvekar & Smt. Silu Narvekar, USA</td>
+              <td>Shri Nirmal Narvekar</td>
+              <td>1,57,700</td>
+            </tr>
+            <tr>
+              <td>801</td>
+              <td>Shri Narasimha K. Joshi & Smt. Radha N. Joshi & Family</td>
+              <td>Shri N.K. Joshi & Family members, Shri Sudhakar N. Joshi, Adv. Components & Instruments, Kabbur
+                Industries</td>
+              <td>12,60,026</td>
+            </tr>
+            <tr>
+              <td>831</td>
+              <td>Smt. Shantabai Anant Gadekar</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>895</td>
+              <td>Sweet memory of Late Smt. Aparna Prabhakar Trevedi</td>
+              <td>Estate of Aparna Trevedi by Shri Ramesh V. Kamath & others</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>920</td>
+              <td>Smt. Mohini V. Mallya</td>
+              <td>Dr. P. Keshav Mallya</td>
+              <td>1,42,000</td>
+            </tr>
+            <tr>
+              <td>941</td>
+              <td>Smt. & Shri Savala Bhiku Bhat</td>
+              <td>Shri Srinivas Savala Bhat and other family members</td>
+              <td>2,76,105</td>
+            </tr>
+            <tr>
+              <td>959</td>
+              <td>Smt. Shantabai Devrao Shanbhag</td>
+              <td>Dr. Shalini Surendra Bhat, Shri Gautham Suresh Naik</td>
+              <td>2,40,005</td>
+            </tr>
+            <tr>
+              <td>996</td>
+              <td>Gowd Saraswath Sabha (Regd) U.K.</td>
+              <td>Self</td>
+              <td>1,26,131</td>
+            </tr>
+            <tr>
+              <td>1008</td>
+              <td>Shri Vivekanand Narayan Pai</td>
+              <td>Shri Yashwant Narayan Pai</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1011</td>
+              <td>Late Smt. Kamal M. Gavaskar</td>
+              <td>Shri Divakar M. Gavaskar</td>
+              <td>4,05,000</td>
+            </tr>
+            <tr>
+              <td>1018</td>
+              <td>Smt. Sushila Pai & Shri Sanjeeva Pai of Brahmavar</td>
+              <td>Son, Shri Narayan B. Pai MD, USA</td>
+              <td>1,09,200</td>
+            </tr>
+            <tr>
+              <td>1061</td>
+              <td>Loving Brother Late Shri Raghuveer Nagesh Naik</td>
+              <td>Shri Vishwanath N. Naik & Others</td>
+              <td>3,07,000</td>
+            </tr>
+            <tr>
+              <td>1063</td>
+              <td>Kumari Surekha Kamat</td>
+              <td>Shri R.R. Kamat</td>
+              <td>3,00,000</td>
+            </tr>
+            <tr>
+              <td>1072</td>
+              <td>Late Shri Anant Venkatesh Shanbhag & Smt. Annapurnabai Anant Shanbhag</td>
+              <td>Kalbagkar, Honmav, Kumta Endowment, Amt. Geeta Ramnath Shanbhag & others</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>1105</td>
+              <td>Shri Sunil Ramanand Shenoy & Smt. Sadhana Sunil Shenoy, USA</td>
+              <td>Shri Sunil Ramanand Shenoy & Smt. Sadhana Sunil Shenoy, USA</td>
+              <td>7,08,007</td>
+            </tr>
+            <tr>
+              <td>1183</td>
+              <td>Shri Mahesh Jaywant Sukhtankar & Smt. Mangala Mahesh Sukhtankar</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1184</td>
+              <td>Shri Narayan Tammanna Shanbhag</td>
+              <td>Shri Prakash N. Shanbhag, Smt. Jyoti P. Shanbhag, Smt. Ramabai N. Shanbhag, Ms. Deepa P. Shanbhag, M/s
+                Prakash N. Shanbhag HUF</td>
+              <td>14,35,095</td>
+            </tr>
+            <tr>
+              <td>1195</td>
+              <td>Late Shri Gopal Mhalappa Pai & Smt. Radhabai Gopal Pai</td>
+              <td>By son, Shri Mukund Gopal Pai</td>
+              <td>1,06,769</td>
+            </tr>
+            <tr>
+              <td>1196</td>
+              <td>Late Shri Narasimha Srinivas Pai of Bhatkal</td>
+              <td>Shri Ganapati N. Pai of Zambia</td>
+              <td>1,20,000</td>
+            </tr>
+            <tr>
+              <td>1197</td>
+              <td>Late Shri G.D. Prabhu of Calicut</td>
+              <td>Shri Praveen Prabhu & Smt. Shanta D. Prabhu, USA</td>
+              <td>3,29,574</td>
+            </tr>
+            <tr>
+              <td>1202</td>
+              <td>Late Shri Narayan Balwant Mahajan & Late Smt. Vijaya Narayan Mahajan</td>
+              <td>Smt. Chitra Arvind Sonde</td>
+              <td>1,31,022</td>
+            </tr>
+            <tr>
+              <td>1220</td>
+              <td>Late Shri Ramchandra Trivikram Shanbhag</td>
+              <td>Shri Anand R. Shanbhag</td>
+              <td>2,35,002</td>
+            </tr>
+            <tr>
+              <td>1246</td>
+              <td>Late Shri Vaikunth Narasimha Mahale</td>
+              <td>Shri Arvind Vaikunth Mahale & Smt. Sujata Mahale</td>
+              <td>1,76,251</td>
+            </tr>
+            <tr>
+              <td>1258</td>
+              <td>Shri Vasudev Dattatray Sonde and Smt. Rama V. Sonde Memorial</td>
+              <td>Shri Arvind V. Sonde & Smt. Chitra A. Sonde</td>
+              <td>57,25,000</td>
+            </tr>
+            <tr>
+              <td>1262</td>
+              <td>Late Shri Ramdas Srinivas Baliga</td>
+              <td>Shri Rajesh R. Baliga, son</td>
+              <td>1,29,481</td>
+            </tr>
+            <tr>
+              <td>1263</td>
+              <td>Ms. Helena Bibko, USA</td>
+              <td>Self</td>
+              <td>2,58,274</td>
+            </tr>
+            <tr>
+              <td>1307</td>
+              <td>Late Shri Sanjeeva G. Shenoy Memorial</td>
+              <td>Smt. Jayashree R. Shenoy, Daughter-in-law</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1336</td>
+              <td>Shri Kudpi Srinivas Shenoy (Mangalore Taj Mahal Hotel)</td>
+              <td>Shri Venkatray Narayan Kamath</td>
+              <td>1,02,019</td>
+            </tr>
+            <tr>
+              <td>1337</td>
+              <td>Smt. Chandrabhaga (Laxmi) Venkappa Shenoy (Hosangdi)</td>
+              <td>Shri Venkatray Narayan Kamath</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>1339</td>
+              <td>Shri Gopal Govind Prabhu</td>
+              <td>Self</td>
+              <td>1,20,000</td>
+            </tr>
+            <tr>
+              <td>1354</td>
+              <td>Dr. Prakash Amonkar & Dr. Shailaja Amonkar</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,20,000</td>
+            </tr>
+            <tr>
+              <td>1366</td>
+              <td>Late Shri R.V. Pandit, Pleader Kumta Birth Centenary year</td>
+              <td>Shri Krishna Ramrao Pandit, United Kingdom</td>
+              <td>1,07,008</td>
+            </tr>
+            <tr>
+              <td>1367</td>
+              <td>Late Shri Irvathur Krishnadas Nayak</td>
+              <td>Smt. Vatsala Nayak</td>
+              <td>1,62,503</td>
+            </tr>
+            <tr>
+              <td>1395</td>
+              <td>Shri & Smt. K.M. Kini Silver Jubilee Marriage April 8</td>
+              <td>Shri Kukkundoor Mahadev Kini</td>
+              <td>1,21,000</td>
+            </tr>
+            <tr>
+              <td>1430</td>
+              <td>Birth Centenary of Late Shri Shevagoor Krishna Kamath</td>
+              <td>Wife Smt. S. Leelavathi Kamath and children</td>
+              <td>10,24,500</td>
+            </tr>
+            <tr>
+              <td>1460</td>
+              <td>Shri K. Ramanand Prabhu, USA</td>
+              <td>Self</td>
+              <td>1,69,528</td>
+            </tr>
+            <tr>
+              <td>1494</td>
+              <td>Smt. Leela Anant Naik</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1496</td>
+              <td>Smt. Shanta Upendra Shenai</td>
+              <td>Dr. Sudhakar U. Shenai</td>
+              <td>1,01,330</td>
+            </tr>
+            <tr>
+              <td>1510</td>
+              <td>Late Shri Nagesh Rama Naik</td>
+              <td>Smt. Priyanka Kartik Rishi, Smt. Sarika Ashish Pherwani, Shri Vishwanath Naik and others</td>
+              <td>2,92,004</td>
+            </tr>
+            <tr>
+              <td>1548</td>
+              <td>Smt. Jyoti Deepak Kamath</td>
+              <td>Shri Deepak S. Kamath and others</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1553</td>
+              <td>Late Shri T. Upendra S. Shenai, Vasai</td>
+              <td>Dr. Sudhakar U. Shenai</td>
+              <td>1,15,410</td>
+            </tr>
+            <tr>
+              <td>1565</td>
+              <td>Smt. Sitabai Ramachandra Pandit</td>
+              <td>Shri Damodar Pandit, USA</td>
+              <td>2,04,223</td>
+            </tr>
+            <tr>
+              <td>1574</td>
+              <td>Shri P.L. Nayak & Smt. Ramabai Nayak</td>
+              <td>Dr. P. Dharmadev L. Nayak</td>
+              <td>16,73,978</td>
+            </tr>
+            <tr>
+              <td>1586</td>
+              <td>S.B. Billimoria & Co</td>
+              <td>Shri R.R. Kamat and others</td>
+              <td>5,00,001</td>
+            </tr>
+            <tr>
+              <td>1597</td>
+              <td>Aditya R. Shenoy on the occasion of 1st Birthday</td>
+              <td>Shri S.P. Kamath and Shri Radhakrishna Shenoy</td>
+              <td>2,43,750</td>
+            </tr>
+            <tr>
+              <td>1598</td>
+              <td>Ms. Ananya Shenoy's Birthday</td>
+              <td>Shri S.P. Kamath, Shri Radhakrishna Shenoy, Ananya R. Shenoy</td>
+              <td>2,35,750</td>
+            </tr>
+            <tr>
+              <td>1610</td>
+              <td>Kadwad Maruti Devasthan</td>
+              <td>Shri Vasudev Narsinh Hegde & Amit Vasudev Hegde</td>
+              <td>1,29,500</td>
+            </tr>
+            <tr>
+              <td>1612</td>
+              <td>Dr. R.N. Kini & Smt. Suman Kini</td>
+              <td>Self</td>
+              <td>1,30,000</td>
+            </tr>
+            <tr>
+              <td>1628</td>
+              <td>Smt. Rohini S. Shanbhag & Shri Srinivas R. Shanbhag</td>
+              <td>Shri Srinivas R. Shanbhag</td>
+              <td>8,50,000</td>
+            </tr>
+            <tr>
+              <td>1651</td>
+              <td>Shri Vaderbettu Gopal Kamath BAPPA'S Birth Centenary</td>
+              <td>Shri Shyamsunder R. Pai, Shri Dinkar Bhat, Dr. N. Raghavendra Bhat, Smt. Gita R. Pai</td>
+              <td>1,72,000</td>
+            </tr>
+            <tr>
+              <td>1654</td>
+              <td>Birthday of Smt. Sushila Kamath</td>
+              <td>Shri S.P. Kamath, Smt. Sushila P. Kamath</td>
+              <td>1,08,500</td>
+            </tr>
+            <tr>
+              <td>1668</td>
+              <td>Late Shri Viithal Nagesh Naik</td>
+              <td>Smt. Vasanthi Vithal Naik</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1686</td>
+              <td>In loving memory of our grandmother/great-grandmother Smt. B. Jayabai (mother of Vinayabai Pai &
+                Hemlata R. Rao) in her centenary year 1904-2004</td>
+              <td>Grandchildren & Great Grandchildren</td>
+              <td>1,00,718</td>
+            </tr>
+            <tr>
+              <td>1695</td>
+              <td>In Revered memory of Late Shri Pangal Pandurang Nayak & Late Smt. Mathura alias Anandibai</td>
+              <td>Children, grandchildren and great-grandchildren</td>
+              <td>7,21,456</td>
+            </tr>
+            <tr>
+              <td>1718</td>
+              <td>Late Smt. Preeta Sawardekar Centenary Endowment</td>
+              <td>Shri Ramakrishna B. Sawardekar, Shri Prasad R. Sawardekar</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>1727</td>
+              <td>GSB Scholarship League Centenary</td>
+              <td>Total 81,54,991</td>
+              <td>81,54,991</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Radhakrishna Rama Kamat</td>
+              <td>2,55,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Shivanand Vasudeva Salgaonkar</td>
+              <td>1,20,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri T.V. Mohandas Pai</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Padmanabh Balakrishna Shanbhag</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Sunil R. Shenoy, USA</td>
+              <td>6,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Gurudas V. Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Smt. Maharookh G. Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Dr. Sunil Gurudas Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Vasant Anandrao Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Smt. Manorama Vasant Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Mohan Vasant Kamat</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri M. Gopal Kini</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Krishna G. Pai</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Dr. Raghunath M. Pai & Smt. G. Sandhya Pai</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Gajanan Vaikunth Shanbhag & Smt. Suman G. Shanbhag</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Raghuveer Nayak & Smt. Anita R. Nayak, USA</td>
+              <td>5,07,853</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Shri Sagun Vishnu Nayak</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>Smt. Amruta Vijay Nayak</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>The Saraswat Co-op. Bank Ltd.</td>
+              <td>10,00,000</td>
+            </tr>
+            <tr>
+              <td>1730</td>
+              <td>Sidharth Dinesh Shenoy</td>
+              <td>Smt. Gita R. Pai (Grandmother), Smt. Deeksha D. Shenoy (Mother), Shri Dinesh Shenoy (Father)</td>
+              <td>1,96,000</td>
+            </tr>
+            <tr>
+              <td>1753</td>
+              <td>Smt. Leela Chittal & Shri Madhav Chittal</td>
+              <td>Shri Shashikant M. Chittal, Canada</td>
+              <td>1,02,005</td>
+            </tr>
+            <tr>
+              <td>1764</td>
+              <td>In loving memory of Smt. Kamalabai V. Gudal & Smt. Kamal (Nee Vimal) R. Gudal</td>
+              <td>Shri Raghuveer Vaman Gudal</td>
+              <td>2,75,000</td>
+            </tr>
+            <tr>
+              <td>1772</td>
+              <td>In loving memory of Late Shri Timmappa Vishwanath Rao & Late Smt. Kaveri V. Rao</td>
+              <td>Shri Vishwanath Kamalaksha Rao</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1779</td>
+              <td>Late Shri Hosdurg Ganesh V. Kamath & Late Smt. Sundari G. Kamath</td>
+              <td>Dr. Gajanan G. Kamath and Smt. Ratnaprabha G. Kamath</td>
+              <td>5,20,000</td>
+            </tr>
+            <tr>
+              <td>1780</td>
+              <td>Smt. Laxmi Narasimha Pai, Bhatkal</td>
+              <td>Shri Ganapati Narasimha Pai, Zambia</td>
+              <td>1,20,000</td>
+            </tr>
+            <tr>
+              <td>1782</td>
+              <td>Late Shri Madhusudan Gavaskar</td>
+              <td>Shri Divakar Madhusudan Gavaskar</td>
+              <td>2,94,000</td>
+            </tr>
+            <tr>
+              <td>1783</td>
+              <td>Late Master Shyamkant Gavaskar</td>
+              <td>Shri Divakar Madhusudan Gavaskar</td>
+              <td>2,94,000</td>
+            </tr>
+            <tr>
+              <td>1790</td>
+              <td>Shanbhag Family, Cadell Road, Mahim, Mumbai</td>
+              <td>Smt. Kumuda Laxman Shanbhag, Shri Laxman Sitaram Shanbhag</td>
+              <td>1,06,000</td>
+            </tr>
+            <tr>
+              <td>1792</td>
+              <td>Late Shri M.R. Pai - 75th Birthday</td>
+              <td>Wife - Smt. Gita R. Pai, Shri Shyamsunder R. Pai, Smt. Deeksha D. Shenoy, Shri M. Upendra Pai</td>
+              <td>2,85,000</td>
+            </tr>
+            <tr>
+              <td>1803</td>
+              <td>Shri Madhukar Gopal Pai</td>
+              <td>Self</td>
+              <td>1,28,000</td>
+            </tr>
+            <tr>
+              <td>1810</td>
+              <td>Shri Matti Krishna Prabhu</td>
+              <td>Shri Matti Laxman Prabhu & Dr. Manorama Prabhu</td>
+              <td>7,00,000</td>
+            </tr>
+            <tr>
+              <td>1813</td>
+              <td>Smt. Vidya Srinivasa Kamath</td>
+              <td>Self</td>
+              <td>2,40,000</td>
+            </tr>
+            <tr>
+              <td>1814</td>
+              <td>Shri Shevagoor Srinivas Kamath</td>
+              <td>Self</td>
+              <td>1,90,000</td>
+            </tr>
+            <tr>
+              <td>1827</td>
+              <td>Shri Mundashi Nagesh Pai, USA</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1828</td>
+              <td>Dr. Veena Sharma, U.K.</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1829</td>
+              <td>Dr. M.A. Prabhu & Dr. Usha A. Prabhu, U.K.</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1832</td>
+              <td>Shri P. Dayanand Pai</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1839</td>
+              <td>Smt. Laxmi Devi & Shri Miyar Hanumanth Nayak</td>
+              <td>Ms. Nalina Nayak</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1847</td>
+              <td>Dr. Devdas Kamath</td>
+              <td>Self</td>
+              <td>1,25,000</td>
+            </tr>
+            <tr>
+              <td>1851</td>
+              <td>Late Shri M. Narasimha Bhat</td>
+              <td>Shri Ramesh Bhat & Dr. Shantidas Bhat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1852</td>
+              <td>Dr.(Smt) Radhika R. Kamath</td>
+              <td>Shri Ramesh Vaman Kamath</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>1866</td>
+              <td>Smt. Krishnabai Vaman Kamath</td>
+              <td>Shri Vaman R. Kamath</td>
+              <td>1,63,640</td>
+            </tr>
+            <tr>
+              <td>1873</td>
+              <td>Ram-Janaki Nidhee</td>
+              <td>Self</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>1876</td>
+              <td>Shri Narayan Kini & Smt. Krishni Kini</td>
+              <td>Shri Ganesh Kini & Smt. Preeti Kini, USA & others</td>
+              <td>2,50,000</td>
+            </tr>
+            <tr>
+              <td>1878</td>
+              <td>Late Shri Raghavendra Ranga Pai's 105th Birthday</td>
+              <td>Late Shri R.R. Pai's Family Members</td>
+              <td>3,00,000</td>
+            </tr>
+            <tr>
+              <td>1888</td>
+              <td>United Clearing & Forwarding Pvt. Ltd.</td>
+              <td>Selves</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>1894</td>
+              <td>Smt. S. Leelavathi Kamath</td>
+              <td>Self & her children</td>
+              <td>3,79,000</td>
+            </tr>
+            <tr>
+              <td>1895</td>
+              <td>In Revered memory of Late Shri Pangal Ananth Nayak & Late Smt. Laxmidevi Nayak</td>
+              <td>Children, grandchildren & close relatives</td>
+              <td>4,14,199</td>
+            </tr>
+            <tr>
+              <td>1907</td>
+              <td>Smt. Kamalakshi Janardhan Acharya</td>
+              <td>Shri Janardhan U. Acharya & others</td>
+              <td>10,00,000</td>
+            </tr>
+            <tr>
+              <td>1910</td>
+              <td>In memory of the Late Smt. Indira P. Pai & Shri Purushottam Pai</td>
+              <td>Shri T. Mohandas Pai, Shri Shridhar M. Pai, Shri Vinayak Ramesh Pai, Smt. Roopa S. Pai & Family
+                Members</td>
+              <td>2,44,000</td>
+            </tr>
+            <tr>
+              <td>1920</td>
+              <td>Late Smt. Sunanda Vittaldas Kini</td>
+              <td>Prof. Malpe Vittaldas Kini, Husband</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>1935</td>
+              <td>Achar-Mallya Endowment</td>
+              <td>Shri Satish Sanjiva Achar & Smt. Maya Satish Achar</td>
+              <td>3,10,000</td>
+            </tr>
+            <tr>
+              <td>1937</td>
+              <td>Late Shri Venkatesh Savala Bhat</td>
+              <td>Shri Govind Savala Bhat, Brother</td>
+              <td>1,30,005</td>
+            </tr>
+            <tr>
+              <td>1943</td>
+              <td>Smt. Kalpana Ram Mohan Shenoy</td>
+              <td>Shri B. Ram Mohan Shenoy</td>
+              <td>1,10,005</td>
+            </tr>
+            <tr>
+              <td>1946</td>
+              <td>Smt. Durga Shenoy & Shri R.C. Shenoy</td>
+              <td>Shri Ranjal Chandrashekhar Shenoy, Smt. Durga C. Shenoy and Smt. Anita Sudhir Pai</td>
+              <td>3,80,000</td>
+            </tr>
+            <tr>
+              <td>1947</td>
+              <td>Shri Damodar Venkatesh Bhat</td>
+              <td>Self</td>
+              <td>1,52,500</td>
+            </tr>
+            <tr>
+              <td>1953</td>
+              <td>Shri Govind Savala Bhat & Family</td>
+              <td>Shri Govind Savala Bhat</td>
+              <td>1,30,005</td>
+            </tr>
+            <tr>
+              <td>1954</td>
+              <td>Shri R.A. Shanbhag</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,22,222</td>
+            </tr>
+            <tr>
+              <td>1956</td>
+              <td>Shri Shankar Ram Prabbu</td>
+              <td>C.A./Ramesh Shankar Prabhu</td>
+              <td>1,10,000</td>
+            </tr>
+            <tr>
+              <td>1970</td>
+              <td>Shri Nagappa Vaman Nayak, Shri Hanumant Venkatesh Shanbhag, both of Bhatkal Hanumant Narasimha
+                Bhandarkar Siddapur memorial</td>
+              <td>Shri R.R. Kamat</td>
+              <td>2,66,666</td>
+            </tr>
+            <tr>
+              <td>1983</td>
+              <td>Juwarkar, Siridao, Goa</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>Shri Mohan Ramrao Pandit</td>
+              <td>Smt. Shalini Mohan Pandit</td>
+              <td>1,18,500</td>
+            </tr>
+            <tr>
+              <td>1996</td>
+              <td>Late Shri Laxman Kamat & Late Smt. Yamuna Kamat</td>
+              <td>Shri Ramchandra Laxman Kamat-Son</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>Shri Cholpadi Gopalkrishna Kamath</td>
+              <td>Shri Kishore G. Kamath & Others, Smt. Sudha Pramod Prabhu, Smt. Suchita Ganesh Prabhu</td>
+              <td>1,85,000</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>Shri Shridhar Bailur Master, Bhatkal 1904-47</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2025</td>
+              <td>Shri N.G. Bhat, Tailor-Hubli 1947</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2026</td>
+              <td>Shri Nagesh Narayan Kamat Bengre, Hubli, 1947</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2031</td>
+              <td>Dr. T.M.A. Pai Memorial Scholarship</td>
+              <td>Dr. T.M.A. Pai Foundation, Manipal</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2038</td>
+              <td>Smt. Sugandhi R Pai's 100th Birthday</td>
+              <td>Children & Grandchildren, Smt. Gita R Pai, Shri Annappa Pai, Smt. Deeksha D. Shenoy, Shri Shyamsunder
+                Pai, Shri Ajith Pai</td>
+              <td>3,00,000</td>
+            </tr>
+            <tr>
+              <td>2043</td>
+              <td>Darshna Gajanan Shanbhag</td>
+              <td>Self</td>
+              <td>2,25,766</td>
+            </tr>
+            <tr>
+              <td>2050A</td>
+              <td>Late Smt. Venkatrao Kini</td>
+              <td>Shri Jagadish Vaman Kini & Kum. Nalini Vaman Kini</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2050B</td>
+              <td>Late Smt. Shantabai Vaman Kini</td>
+              <td>Same as above</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2050C</td>
+              <td>Late Shri Chandrakant Vaman Kini</td>
+              <td>Same as above</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2050D</td>
+              <td>Late Shri Umakant Vaman Kini</td>
+              <td>Same as above</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2050E</td>
+              <td>Late Shri Ramakant Vaman Kini</td>
+              <td>Same as above</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2051</td>
+              <td>Shri Sudhakar Padmanabh Shanbhag</td>
+              <td>Self</td>
+              <td>2,28,000</td>
+            </tr>
+            <tr>
+              <td>2056</td>
+              <td>Late Smt. Shalini Damodar Prabhu & Late Shri Damodar Pandurang Prabhu</td>
+              <td>Smt. Saroja Sudhir Shenai</td>
+              <td>1,10,000</td>
+            </tr>
+            <tr>
+              <td>2060</td>
+              <td>Smt. Geetabai Gajanan Prabhu Shiroorkar Memorial</td>
+              <td>Shri Gajanan Mukund Prabhu Shiroorkar</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2061</td>
+              <td>Shri Gajanan Mukund Prabhu Shiroorkar</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2067</td>
+              <td>Smt. Bhagirathi R. Shenoy</td>
+              <td>Shri Narendra R. Shenoy</td>
+              <td>1,50,000</td>
+            </tr>
+            <tr>
+              <td>2068</td>
+              <td>Late Shri Narayan Achut Pal</td>
+              <td>Shri Narasimha N. Pal & Smt. Padma Narasimha Pal</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2074</td>
+              <td>Shri R.A. Shanbhag</td>
+              <td>Shri Amar Ramkrishna Shanbhag</td>
+              <td>11,00,000</td>
+            </tr>
+            <tr>
+              <td>2076</td>
+              <td>Late Shri K.V. Shenoy & Shri Ajit Pai</td>
+              <td>Smt. Meera V. Shenoy, Ms. Suman Shenoy</td>
+              <td>3,25,000</td>
+            </tr>
+            <tr>
+              <td>2081</td>
+              <td>Smt. Sushma Padmanabh Kamath</td>
+              <td>Smt. Sushma P. Kamath & Shri P.M. Kamath</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2082</td>
+              <td>In revered memory of Late Shri Shevagoor Krishna Ramachandra Kamath & Late Smt. Shevagoor Leelavathi
+                Kamath</td>
+              <td>Estate of Late Shri Shevagoor Krishna R. Kamath & Late Smt. Shevagoor Leelavathi Krishna Kamath</td>
+              <td>12,06,500</td>
+            </tr>
+            <tr>
+              <td>2083</td>
+              <td>Late Shri Mhalu Nagappa Pai & Late Smt. Annapoornabai Mhalu Pai of Aversa</td>
+              <td>Shri Gopal Mhalu Pai, Mumbai & Others</td>
+              <td>1,00,005</td>
+            </tr>
+            <tr>
+              <td>1956</td>
+              <td>Shri Shankar Ram Prabbu</td>
+              <td>C.A./Ramesh Shankar Prabhu</td>
+              <td>1,10,000</td>
+            </tr>
+            <tr>
+              <td>1970</td>
+              <td>Shri Nagappa Vaman Nayak, Shri Hanumant Venkatesh Shanbhag, both of Bhatkal Hanumant Narasimha
+                Bhandarkar Siddapur memorial</td>
+              <td>Shri R.R. Kamat</td>
+              <td>2,66,666</td>
+            </tr>
+            <tr>
+              <td>1983</td>
+              <td>Juwarkar, Siridao, Goa</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>Shri Mohan Ramrao Pandit</td>
+              <td>Smt. Shalini Mohan Pandit</td>
+              <td>1,18,500</td>
+            </tr>
+            <tr>
+              <td>1996</td>
+              <td>Late Shri Laxman Kamat & Late Smt. Yamuna Kamat</td>
+              <td>Shri Ramchandra Laxman Kamat-Son</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>Shri Cholpadi Gopalkrishna Kamath</td>
+              <td>Shri Kishore G. Kamath & Others, Smt. Sudha Pramod Prabhu, Smt. Suchita Ganesh Prabhu</td>
+              <td>1,85,000</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>Shri Shridhar Bailur Master, Bhatkal 1904-47</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2025</td>
+              <td>Shri N.G. Bhat, Tailor-Hubli 1947</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2026</td>
+              <td>Shri Nagesh Narayan Kamat Bengre, Hubli, 1947</td>
+              <td>Shri R.R. Kamat</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2031</td>
+              <td>Dr. T.M.A. Pai Memorial Scholarship</td>
+              <td>Dr. T.M.A. Pai Foundation, Manipal</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2038</td>
+              <td>Smt. Sugandhi R Pai's 100th Birthday</td>
+              <td>Children & Grandchildren, Smt. Gita R Pai, Shri Annappa Pai, Smt. Deeksha D. Shenoy, Shri Shyamsunder
+                Pai, Shri Ajith Pai</td>
+              <td>3,00,000</td>
+            </tr>
+            <tr>
+              <td>2043</td>
+              <td>Darshna Gajanan Shanbhag</td>
+              <td>Self</td>
+              <td>2,25,766</td>
+            </tr>
+            <tr>
+              <td>2050A</td>
+              <td>Late Smt. Venkatrao Kini</td>
+              <td>Shri Jagadish Vaman Kini & Kum. Nalini Vaman Kini</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2050B</td>
+              <td>Late Smt. Shantabai Vaman Kini</td>
+              <td>Same as above</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2050C</td>
+              <td>Late Shri Chandrakant Vaman Kini</td>
+              <td>Same as above</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2050D</td>
+              <td>Late Shri Umakant Vaman Kini</td>
+              <td>Same as above</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2050E</td>
+              <td>Late Shri Ramakant Vaman Kini</td>
+              <td>Same as above</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2051</td>
+              <td>Shri Sudhakar Padmanabh Shanbhag</td>
+              <td>Self</td>
+              <td>2,28,000</td>
+            </tr>
+            <tr>
+              <td>2056</td>
+              <td>Late Smt. Shalini Damodar Prabhu & Late Shri Damodar Pandurang Prabhu</td>
+              <td>Smt. Saroja Sudhir Shenai</td>
+              <td>1,10,000</td>
+            </tr>
+            <tr>
+              <td>2060</td>
+              <td>Smt. Geetabai Gajanan Prabhu Shiroorkar Memorial</td>
+              <td>Shri Gajanan Mukund Prabhu Shiroorkar</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2061</td>
+              <td>Shri Gajanan Mukund Prabhu Shiroorkar</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2067</td>
+              <td>Smt. Bhagirathi R. Shenoy</td>
+              <td>Shri Narendra R. Shenoy</td>
+              <td>1,50,000</td>
+            </tr>
+            <tr>
+              <td>2068</td>
+              <td>Late Shri Narayan Achut Pal</td>
+              <td>Shri Narasimha N. Pal & Smt. Padma Narasimha Pal</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2074</td>
+              <td>Shri R.A. Shanbhag</td>
+              <td>Shri Amar Ramkrishna Shanbhag</td>
+              <td>11,00,000</td>
+            </tr>
+            <tr>
+              <td>2076</td>
+              <td>Late Shri K.V. Shenoy & Shri Ajit Pai</td>
+              <td>Smt. Meera V. Shenoy, Ms. Suman Shenoy</td>
+              <td>3,25,000</td>
+            </tr>
+            <tr>
+              <td>2081</td>
+              <td>Smt. Sushma Padmanabh Kamath</td>
+              <td>Smt. Sushma P. Kamath & Shri P.M. Kamath</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2082</td>
+              <td>In revered memory of Late Shri Shevagoor Krishna Ramachandra Kamath & Late Smt. Shevagoor Leelavathi
+                Kamath</td>
+              <td>Estate of Late Shri Shevagoor Krishna R. Kamath & Late Smt. Shevagoor Leelavathi Krishna Kamath</td>
+              <td>12,06,500</td>
+            </tr>
+            <tr>
+              <td>2083</td>
+              <td>Late Shri Mhalu Nagappa Pai & Late Smt. Annapoornabai Mhalu Pai of Aversa</td>
+              <td>Shri Gopal Mhalu Pai, Mumbai & Others</td>
+              <td>1,00,005</td>
+            </tr>
+            <tr>
+              <td>2086</td>
+              <td>Shri Shrinivas Savala Bhat & Smt. Shreedevi Shrinivas Bhat</td>
+              <td>Shri Shrinivas Savala Bhat, Smt. Shreedevi Shrinivas Bhat, Shri Shrikant Shrinivas Bhat & Shri
+                Ravindra Shrinivas Bhat</td>
+              <td>4,59,600</td>
+            </tr>
+            <tr>
+              <td>2090</td>
+              <td>Late Shri Ramdas Keshav Kamat</td>
+              <td>Smt. Leela Ramdas Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2101</td>
+              <td>Late Shri V.R. Shenoy</td>
+              <td>Shri Uday Venkatesh Malya</td>
+              <td>2,23,000</td>
+            </tr>
+            <tr>
+              <td>2102</td>
+              <td>Late Smt. Vijaya Arvind Desai</td>
+              <td>Shri Bhaskar Arvind Desai</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2111</td>
+              <td>Smt. Yashodhara Kamat</td>
+              <td>Shri Madhav Ganapati Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2112</td>
+              <td>Late Smt. Vijaylakshmi Krishna Pandit</td>
+              <td>Shri Krishna Ramrao Pandit</td>
+              <td>1,05,001</td>
+            </tr>
+            <tr>
+              <td>2120</td>
+              <td>Late Smt. Sumangala Pai</td>
+              <td>Shri Ganesh Nagesh Shanbhag (C.A.)</td>
+              <td>1,11,000</td>
+            </tr>
+            <tr>
+              <td>2122</td>
+              <td>Smt. Vatsala Telang & Shri Laxmikant Telang</td>
+              <td>Shri Ramkrishna Laxmikant Telang</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2123</td>
+              <td>Chhaue Devi Dulharaj Ranka Charitable Trust</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2129</td>
+              <td>Baby Kim Patrick Pelley (Born 25.02.2010) Beloved grandson of Smt. Vidya & Shri Krishna Kudva</td>
+              <td>Smt. Vidya Kudva, USA</td>
+              <td>1,29,993</td>
+            </tr>
+            <tr>
+              <td>2130</td>
+              <td>In memory of my late husband Shri T.T. Shenoy</td>
+              <td>Smt. Ramani Shenoy</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2131</td>
+              <td>Smt. Sushila Kamath's Birth Centenary year 2015</td>
+              <td>Smt. Gita R. Pai, Shri Narendra Bhat, Ms. Veena Prasad, Shri Dinkar Bhat, Ms. Seema Baliga, Ms.
+                Pratima Bhandarkar, Dr. Nityanand Prabhu, Ms. Roopa D. Shenoy, Shri Shyamsunder R. Pai, Smt. Deeksha D.
+                Shenoy, Ms. Priya Prabhu, Ms. Meghna Kamath</td>
+              <td>1,17,001</td>
+            </tr>
+            <tr>
+              <td>2132</td>
+              <td>Smt. Vinaya Shridhar Shanbhag</td>
+              <td>Shri Shridhar Mukund Shanbhag</td>
+              <td>1,25,000</td>
+            </tr>
+            <tr>
+              <td>2133</td>
+              <td>In revered memory of Late Shri Pangal Ramanath Nayak and Late Smt. Saraswati Nayak to commemorate the
+                former’s Birth Centenary</td>
+              <td>Members of Pangal Nayak Family, friends & relatives</td>
+              <td>20,78,937</td>
+            </tr>
+            <tr>
+              <td>2137</td>
+              <td>Late Smt. Seema Gajanan Arvandekar</td>
+              <td>Shri Shivaprasad Arvandekar</td>
+              <td>1,41,104</td>
+            </tr>
+            <tr>
+              <td>2140</td>
+              <td>In the revered memory of our parents Late Shri Vaderbettu Pandurang Kamath & Late Smt. Tata Pandurang
+                Kamath</td>
+              <td>Smt. Sushila Kamath, daughter from the estate of my parents</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2152</td>
+              <td>Late Shri Manjunath Sadashiv Wagle & Late Smt. Laxmi Manjunath Wagle</td>
+              <td>Smt. Meera Maheshwar Wagle</td>
+              <td>2,50,000</td>
+            </tr>
+            <tr>
+              <td>2153</td>
+              <td>Late Shri Yeshwant Neelkanth Nadkarni & Late Smt. Savitri Yeshwant Nadkarni</td>
+              <td>Smt. Meera Maheshwar Wagle</td>
+              <td>2,50,000</td>
+            </tr>
+            <tr>
+              <td>2165</td>
+              <td>Late Smt. Sharada Sarvottam Pai</td>
+              <td>Shri Shrikant Sarvottam Pai</td>
+              <td>1,37,000</td>
+            </tr>
+            <tr>
+              <td>2180</td>
+              <td>Dr. Mangesh Rajaram Gaitonde & Mrs. Laila Gaitonde</td>
+              <td>Selves</td>
+              <td>6,85,357</td>
+            </tr>
+            <tr>
+              <td>2181</td>
+              <td>Smt. Prema M. Kamath & Shri Manjunath Kamath</td>
+              <td>Shri B. Ram Mohan Shenoy</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2184</td>
+              <td>Late Shri Kaup Mukund Padmanabh Shanbhogue & Late Smt. Kaup Sulochana Mukund Shanbhogue</td>
+              <td>Shri Shankar Mukund Shenai, Smt. Shobha Shankar Shenai & Ms. Ramani M. Shenoy</td>
+              <td>5,35,650</td>
+            </tr>
+            <tr>
+              <td>2197</td>
+              <td>Late Basrur Anand Bhandarkar</td>
+              <td>Shri Vijendra Bhandary, Shri Nagendra V. Bhandarkar, Shri Upendra V. Bhandarkar and Shri Mahendra V.
+                Bhandarkar</td>
+              <td>1,30,001</td>
+            </tr>
+            <tr>
+              <td>2224</td>
+              <td>Krish D. Shenoy</td>
+              <td>Smt. Deeksha Dinesh Shenoy & Smt. Gita R. Pai</td>
+              <td>1,89,000</td>
+            </tr>
+            <tr>
+              <td>2239</td>
+              <td>In memory of Late Shri R.L. Kamat & Late Smt. S.R. Kamat</td>
+              <td>Shri Anil Ramachandra Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2268</td>
+              <td>Late Shri Vinayak Kamat</td>
+              <td>Smt. Ashalata Vinayak Kamat, Shri Narayan V. Kamat and Shri Kamalaksha V. Kamath</td>
+              <td>3,00,000</td>
+            </tr>
+            <tr>
+              <td>2272</td>
+              <td>Shri Gokuldas Shah & Smt. Mandakini Shah Foundation</td>
+              <td>Shri Vijay Gokuldas Shah</td>
+              <td>1,08,000</td>
+            </tr>
+            <tr>
+              <td>2282</td>
+              <td>Smt. Champa (Tarabai) Dayanand Bhat, Honavar</td>
+              <td>Shri Narasimha Ganapati Pai, Zambia</td>
+              <td>1,15,000</td>
+            </tr>
+            <tr>
+              <td>2283</td>
+              <td>Smt. Indira Vittal Pai, Hubli</td>
+              <td>Shri Ganapati Narasimha Pai, Zambia</td>
+              <td>1,15,000</td>
+            </tr>
+            <tr>
+              <td>2284</td>
+              <td>Late Smt. Sumitra Devi Bhat, Malpe</td>
+              <td>Shri Kamalaksha Narasimha Bhat & Smt. Nirmala K. Bhat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2285</td>
+              <td>Hosad Nayak Family Association</td>
+              <td>Shri Padmanabh Trivikram Nayak & family, Shri Shivappa H. Nayak & Shri Gajanan V. Nayak & family and
+                other family members</td>
+              <td>1,01,000</td>
+            </tr>
+            <tr>
+              <td>2291</td>
+              <td>In loving memory of Shri Arvind Madgavkar on his 80th Birth Anniversary (12.11.2012)</td>
+              <td>Smt. Meera Madgavkar, Shri Dilip Madgavkar, Shri Sanjay Madgavkar, Shri Ranjit Madgavkar</td>
+              <td>4,25,000</td>
+            </tr>
+            <tr>
+              <td>2165</td>
+              <td>Late Smt. Sharada Sarvottam Pai</td>
+              <td>Shri Shrikant Sarvottam Pai</td>
+              <td>1,37,000</td>
+            </tr>
+            <tr>
+              <td>2180</td>
+              <td>Dr. Mangesh Rajaram Gaitonde & Mrs. Laila Gaitonde</td>
+              <td>Selves</td>
+              <td>6,85,357</td>
+            </tr>
+            <tr>
+              <td>2181</td>
+              <td>Smt. Prema M. Kamath & Shri Manjunath Kamath</td>
+              <td>Shri B. Ram Mohan Shenoy</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2184</td>
+              <td>Late Shri Kaup Mukund Padmanabh Shanbhogue & Late Smt. Kaup Sulochana Mukund Shanbhogue</td>
+              <td>Shri Shankar Mukund Shenai, Smt. Shobha Shankar Shenai & Ms. Ramani M. Shenoy</td>
+              <td>5,35,650</td>
+            </tr>
+            <tr>
+              <td>2197</td>
+              <td>Late Basrur Anand Bhandarkar</td>
+              <td>Shri Vijendra Bhandary, Shri Nagendra V. Bhandarkar, Shri Upendra V. Bhandarkar and Shri Mahendra V.
+                Bhandarkar</td>
+              <td>1,30,001</td>
+            </tr>
+            <tr>
+              <td>2224</td>
+              <td>Krish D. Shenoy</td>
+              <td>Smt. Deeksha Dinesh Shenoy & Smt. Gita R. Pai</td>
+              <td>1,89,000</td>
+            </tr>
+            <tr>
+              <td>2239</td>
+              <td>In memory of Late Shri R.L. Kamat & Late Smt. S.R. Kamat</td>
+              <td>Shri Anil Ramachandra Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2268</td>
+              <td>Late Shri Vinayak Kamat</td>
+              <td>Smt. Ashalata Vinayak Kamat, Shri Narayan V. Kamat and Shri Kamalaksha V. Kamath</td>
+              <td>3,00,000</td>
+            </tr>
+            <tr>
+              <td>2272</td>
+              <td>Shri Gokuldas Shah & Smt. Mandakini Shah Foundation</td>
+              <td>Shri Vijay Gokuldas Shah</td>
+              <td>1,08,000</td>
+            </tr>
+            <tr>
+              <td>2282</td>
+              <td>Smt. Champa (Tarabai) Dayanand Bhat, Honavar</td>
+              <td>Shri Narasimha Ganapati Pai, Zambia</td>
+              <td>1,15,000</td>
+            </tr>
+            <tr>
+              <td>2283</td>
+              <td>Smt. Indira Vittal Pai, Hubli</td>
+              <td>Shri Ganapati Narasimha Pai, Zambia</td>
+              <td>1,15,000</td>
+            </tr>
+            <tr>
+              <td>2284</td>
+              <td>Late Smt. Sumitra Devi Bhat, Malpe</td>
+              <td>Shri Kamalaksha Narasimha Bhat & Smt. Nirmala K. Bhat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2285</td>
+              <td>Hosad Nayak Family Association</td>
+              <td>Shri Padmanabh Trivikram Nayak & family, Shri Shivappa H. Nayak & Shri Gajanan V. Nayak & family and
+                other family members</td>
+              <td>1,01,000</td>
+            </tr>
+            <tr>
+              <td>2291</td>
+              <td>In loving memory of Shri Arvind Madgavkar on his 80th Birth Anniversary (12.11.2012)</td>
+              <td>Smt. Meera Madgavkar, Shri Dilip Madgavkar, Shri Sanjay Madgavkar, Shri Ranjit Madgavkar</td>
+              <td>4,25,000</td>
+            </tr>
+            <tr>
+              <td>2293</td>
+              <td>In memory of Late Shri Ramaksrishna</td>
+              <td>Shri Neelkant Ramakrishna Shanbhag, Manjunath Shanbhag (Marvanthe), Shri Rajesh Ramkrishna Shanbhag
+              </td>
+              <td>1,15,000</td>
+            </tr>
+            <tr>
+              <td>2298</td>
+              <td>Late Smt. Sharadabai</td>
+              <td>Sharadabai Charitable Trust</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2300</td>
+              <td>In revered memory of Late Shri H. Ramakrishna Kamath & Late Smt. H. Sharada alias Laxmidevi</td>
+              <td>Shri H. Surendranath Kamath & Smt. H. Shobha Kamath & Others</td>
+              <td>5,10,000</td>
+            </tr>
+            <tr>
+              <td>2301</td>
+              <td>In revered memory of Late Shri B. Madhavaraya Prabhu & Late Smt. B. Meenakshi Prabhu</td>
+              <td>Shri H. Surendranath Kamath & Executor of the Will of Late Smt. B. Meenakshi Prabhu</td>
+              <td>7,50,101</td>
+            </tr>
+            <tr>
+              <td>2303</td>
+              <td>In the name of "Shri U.S. Mallya"</td>
+              <td>Shri Vijay S. Mallya</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2319</td>
+              <td>Smt. Shanta D. Bhat & Shri Gurpur Dattanand Bhat</td>
+              <td>Smt. Shanta D. Bhat</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2330</td>
+              <td>Dr. Anandaraya R. Kamath</td>
+              <td>Dr. Vidyadhar Anand Kamath</td>
+              <td>1,50,000</td>
+            </tr>
+            <tr>
+              <td>2348</td>
+              <td>Late Shri Gurudut Manjeshwar & Late Smt. Nirmala G. Manjeshwar</td>
+              <td>Smt. Vidya Hrishikesh Kamat & Shri Hrishikesh Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2355</td>
+              <td>In loving memory of Late Smt. Harady Sharadabai</td>
+              <td>Smt. Ullal Kasturi Kini - Daughter & Shri Ullal Dinesh Kini</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2385</td>
+              <td>In loving memory of our beloved parents the Late Shri H. Ramanath Rao and the Late Smt. Hemalata R.
+                Rao to commemorate the former’s Birth Centenary 24th May (1913-2013)</td>
+              <td>
+                Smt. Ajitha Nayak 1,00,000,<br>
+                Smt. Vidya K. Kudva & Shri Krishna K. Kudva 2,24,419,<br>
+                Dr. Arathi Rao Pinto, Mr. Colin Pinto, Anushka Pinto & Karishma Pinto 1,24,419,<br>
+                Shri P. Pandurang Nayak & Smt. Mala Nayak 1,24,419,<br>
+                Smt. Archana K. Kudva-Pelley & Mr. Patrick Pelley 1,24,419,<br>
+                Shri Pangal Vasudev Nayak 10,000<br>
+              </td>
+              <td>7,07,676</td>
+            </tr>
+            <tr>
+              <td>2386</td>
+              <td>Late Shri Karkal Ramanath Rau & Smt. Indira Ramanath Rau</td>
+              <td>Shri Bob Rau & Shri Krishna Rau, Karkal</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2387</td>
+              <td>Dr. Ramesh Marutiroy Gharse</td>
+              <td>Smt. Kanchan Ramesh Gharse</td>
+              <td>1,02,500</td>
+            </tr>
+            <tr>
+              <td>2389</td>
+              <td>Late Shri Gopal Bhiku Kamat & Late Smt. Radhabai G. Kamat</td>
+              <td>Shri Chandrahas G. Kamat</td>
+              <td>1,65,000</td>
+            </tr>
+            <tr>
+              <td>2398</td>
+              <td>In loving memory of Dr. Pandurang M. Pai & Dr. Anand P. Pai</td>
+              <td>Shri Prashant P. Pai & Smt. Vidya P. Pai</td>
+              <td>2,10,000</td>
+            </tr>
+            <tr>
+              <td>2403</td>
+              <td>Smt. Gulabi S. Prabhu</td>
+              <td>Shri Mohan Sunder Prabhu</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2412</td>
+              <td>Konkani Charitable Fund Inc USA</td>
+              <td>
+                Selves - 97,76,932,<br>
+                Dr. Gopal A. Bhandarkar - 1,34,516,<br>
+                Dr. Surendra Shenoy - 1,34,516,<br>
+                Shri Uday Nayak & Smt. Shailaja Nayak - 4,07,864,<br>
+                Smt. Veena Kamath - 2,82,860,<br>
+                Dr. Vasudev Shenoy, Shri Ravi Shenoy, Dr. Vijaykumar Rao, Dr. Gajnan Shanbhag - 11,29,079
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2418</td>
+              <td>Late Shri Anant Kant Nayak & Late Shri Pundalik Kant Nayak from Kagal, Kumta, U. Kannada</td>
+              <td>Shri Shrinivas Anant Nayak</td>
+              <td>3,90,000</td>
+            </tr>
+            <tr>
+              <td>2423</td>
+              <td>Vijaya Murali Memorial</td>
+              <td>
+                Mr. Murali Krishnamoorthi - 2,50,000,<br>
+                Mr. Rajeev Murali - 1,25,000,<br>
+                Mrs. Gayatri Amonkar - 1,25,000
+              </td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2427</td>
+              <td>Late Cannanore Krishna Pai</td>
+              <td>Shri Cannanore Jagannath Pai</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2429</td>
+              <td>Late Smt. Anjni Ramesh Kamath</td>
+              <td>Shri Ramesh Shrinivas Kamath</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2441</td>
+              <td>Late Shri Rama Dasa Kamat & Late Smt. Sitabai Rama Kamat</td>
+              <td>Shri Babu Rama Kamat</td>
+              <td>1,50,000</td>
+            </tr>
+            <tr>
+              <td>2443</td>
+              <td>Late Shri H. Laxminarayan Kamath & Late Smt. H. Tulasi alias Laxmi Devi</td>
+              <td>Shri H. Surendranath Kamath & Smt. H. Shobha Kamath</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2444</td>
+              <td>Dr. Vidyadhar Vithal Muzumdar</td>
+              <td>Self</td>
+              <td>1,50,000</td>
+            </tr>
+            <tr>
+              <td>2450</td>
+              <td>Late Smt. Sarojini Sanjiv Kamath</td>
+              <td>Pratima Murali Kini</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2451</td>
+              <td>Shri Narayan Venkataray Kamath & Smt. Lilybai Narayan Kamath</td>
+              <td>Shri Venkatraya Narayan Kamath</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2452</td>
+              <td>Smt. Manorama Narayan Kamath</td>
+              <td>Shri Venkatraya Narayan Kamath</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2455</td>
+              <td>Late Shri Naesh Madhav Shanbhag</td>
+              <td>
+                Shri Ganesh Nagesh Shanbhag,<br>
+                Shri Nitin Vasant Shanbhag,<br>
+                Shri Prasan Ganesh Shanbhag
+              </td>
+              <td>1,64,111</td>
+            </tr>
+            <tr>
+              <td>2456</td>
+              <td>Late Smt. Shantabai Nagesh Shanbhag</td>
+              <td>Shri Ganesh Shanbhag</td>
+              <td>1,02,000</td>
+            </tr>
+            <tr>
+              <td>2460</td>
+              <td>In revered memory of Late Smt. Sitabai & Late Shri Ramachandra Manu Naik of Manu Niwas, Honavar</td>
+              <td>Parivar of Late Smt. Sitabai & Late Shri Ramachandra Manu Naik</td>
+              <td>1,53,501</td>
+            </tr>
+            <tr>
+              <td>2462</td>
+              <td>Late Shri Damodar A. Kare</td>
+              <td>Shri Ramnath Damodar Kare</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2468</td>
+              <td>In loving memory of Late Shri M.G. Kamat & Smt. Yashodhara Kamat</td>
+              <td>Shri Hrishikesh Kamat-son & Smt. Vidya H. Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2485</td>
+              <td>Late Shri M. Gopal Kini</td>
+              <td>Estate of Late Shri M. Gopal Kini</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2486</td>
+              <td>Shri Gopal Kini's 85th Birthday</td>
+              <td>Smt. Radha Kini</td>
+              <td>1,85,000</td>
+            </tr>
+            <tr>
+              <td>2491</td>
+              <td>Shri M.R. Shroff</td>
+              <td>Self</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2496</td>
+              <td>Bhatkal Rama Vaman Kamath Nagarkar & Smt. Janakibai Rama Kamath Memorial</td>
+              <td>Sons, Daughters, Grandchildren</td>
+              <td>1,33,333</td>
+            </tr>
+            <tr>
+              <td>2499</td>
+              <td>Late Shri H. Ravindranath Kamath</td>
+              <td>Shri H. Surendranath Kamath & Smt. H. Shobha Kamath</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2501</td>
+              <td>H.H. Srimad Varadendra Tirtha Swamiji’s Centenary year</td>
+              <td>Shri Kamalaksha H. Shenoy & Family</td>
+              <td>1,02,001</td>
+            </tr>
+            <tr>
+              <td>2503</td>
+              <td>In revered memory of Late Shri Mohan Rao & Late Smt. B. Leela Bai</td>
+              <td>Smt. H. Shobha Kamath</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2506</td>
+              <td>In memory of our beloved Pangal Vasudeva Nayak on the occasion of his 82nd Birthday (11 May 2015)
+                donated by his loving family</td>
+              <td>
+                Smt. P. Ajitha Nayak - 10,000,<br>
+                Smt. Anasuya Madgavkar - 2,00,000,<br>
+                Dr. P.Pandurng Nayak - 2,20,103,<br>
+                Smt. Arathi Rao Pinto - 1,25,000,<br>
+                Smt. Vidya K. Kudva - 2,00,000,<br>
+                Smt. Archana K.Kudva Pelley - 1,00,000
+              </td>
+              <td>8,55,103</td>
+            </tr>
+            <tr>
+              <td>2508</td>
+              <td>Shree Ramnath Dvasthan Mahajanas Association, (Bombay)</td>
+              <td>Selves</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2509</td>
+              <td>Dr. Padma T. Sanghavi & Ms Mala Sanghavi Nayak</td>
+              <td>Shri Tulsidas M. Sanghavi USA- Daughter</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2520</td>
+              <td>Late Shri Vasant Ramchandra Kini</td>
+              <td>Shri Prasant Vasant Kini, Smt. Pooja P. Kini</td>
+              <td>2,26,000</td>
+            </tr>
+            <tr>
+              <td>2534</td>
+              <td>Smt. Suman R. Kini & Dr. Raghavendra Kini Golden Wedding Anniversary</td>
+              <td>Dr. R.N. Kini</td>
+              <td>2,80,000</td>
+            </tr>
+            <tr>
+              <td>2538</td>
+              <td>On the occasion of Smt. Ajitha P. Nayak's 75th Birthday 02.02.2016</td>
+              <td>
+                Smt. Vidya K. Kudva (Sister) - 1,20,000,<br>
+                Smt. Anasuya Madgavkar (Daughter) - 15,000,<br>
+                Dr. Arathi Rao Pinto (Sister) - 20,000,<br>
+                Dr. P. Pandurng Nayak, USA (Son) - 20,000
+              </td>
+              <td>1,75,000</td>
+            </tr>
+            <tr>
+              <td>2540</td>
+              <td>Late Smt. Annapurna Vishwanath Nayak & Late Shri Vishwanath T Nayak</td>
+              <td>Shri Chandrakant V. Nayak</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2548</td>
+              <td>Shri Anant Ganesh Sonde & Smt. Asha Anant Sonde</td>
+              <td>Shri Anant Ganesh Sonde</td>
+              <td>2,20,000</td>
+            </tr>
+            <tr>
+              <td>2549</td>
+              <td>Late Shri Arbettu Vaman Kamath</td>
+              <td>Brig(Retd.) Arbettu Prabhakara Kamath (Son)</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2560</td>
+              <td>Smt. Varija Laxman Bhat</td>
+              <td>Shri M. Ganesh Bhat</td>
+              <td>1,25,000</td>
+            </tr>
+            <tr>
+              <td>2562</td>
+              <td>Ms. Swati Anil Bhat</td>
+              <td>Shri Girish Anil Bhat</td>
+              <td>2,51,000</td>
+            </tr>
+            <tr>
+              <td>2566</td>
+              <td>Late Shevgoor Srinivas Kamath</td>
+              <td>Shri S.P. Kamath (Brother)</td>
+              <td>1,80,000</td>
+            </tr>
+            <tr>
+              <td>2569</td>
+              <td>Late Smt. & Shri Radha & P Krishna Kamath</td>
+              <td>Dr. Sanjay V. Kamath</td>
+              <td>1,95,000</td>
+            </tr>
+            <tr>
+              <td>2570</td>
+              <td>Shri Hebri Umesh Pai-75th Birthday</td>
+              <td>Smt. Vijaya Kamath, Shri Uday Pai & Ms Vinaya Pai</td>
+              <td>2,02,500</td>
+            </tr>
+            <tr>
+              <td>2571</td>
+              <td>Kottecherry Shri Achuta Srinivas Kamath - Centenary</td>
+              <td>Smt. Vijaya Kamath, Shri B. Upendra Pai, Ms. Vinaya Pai & Shri Uday Pai</td>
+              <td>1,67,500</td>
+            </tr>
+            <tr>
+              <td>2576</td>
+              <td>Late Shri Devdas P. Kamath</td>
+              <td>Shri M. Dayananda Gopalkrishna Padiyar</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2580</td>
+              <td>Ms. Mani Pirojshah Daruwalla</td>
+              <td>Ms. Arni Pirojshah Daruwalla</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2584</td>
+              <td>In loving memory of Late Shri T.V. Kamath</td>
+              <td>Smt. Shanta T. Kamath</td>
+              <td>1,20,000</td>
+            </tr>
+            <tr>
+              <td>2586</td>
+              <td>Smt. Anuradha Suresh Pai</td>
+              <td>Self</td>
+              <td>1,65,000</td>
+            </tr>
+            <tr>
+              <td>2592</td>
+              <td>Late Smt. Shobha Shankar Shenai & Late Shri Shankar Mukund Shenoy</td>
+              <td>Shri Sudhir Shankar Shenai</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2603</td>
+              <td>Smt. Rekha Vedavyas Rao, Mysore Founder Trustee</td>
+              <td>Sadbhavana Pratiti, Mulki</td>
+              <td>1,25,000</td>
+            </tr>
+            <tr>
+              <td>2608</td>
+              <td>Late Smt. Shalini P. Kamath</td>
+              <td>Brig. (Retd.) Arbettu Prabhakar Kamath-Husband</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2618</td>
+              <td>Late Shri Pangal Devadas Nayak & Smt. Pangal Usha Nayak</td>
+              <td>Smt. H. Shobha Kamath</td>
+              <td>2,50,000</td>
+            </tr>
+            <tr>
+              <td>2619</td>
+              <td>Late Shri Pangal Devadas Nayak & Smt. Pangal Usha Nayak</td>
+              <td>Smt. H. Shobha Kamath</td>
+              <td>2,50,000</td>
+            </tr>
+            <tr>
+              <td>2620</td>
+              <td>Late Shri H. Ravindranath Kamath</td>
+              <td>Shri H. Ranganath Kamath</td>
+              <td>5,15,000</td>
+            </tr>
+            <tr>
+              <td>2621</td>
+              <td>Late Shri Venkatesh Krishna Pai</td>
+              <td>Smt. Veena Ganesh Shanbhag</td>
+              <td>1,02,000</td>
+            </tr>
+            <tr>
+              <td>2622</td>
+              <td>Late Kodi Vasudeva Kini & Late Smt. Anusuya Vasudev Kini</td>
+              <td>Shri Kodi Vasudev Kini</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2623</td>
+              <td>Shri Gopal Dinkar Rao Swarga Manthan, Calicut</td>
+              <td>Smt. Latha Ramesh Kini-Neice</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2624</td>
+              <td>Shri Vaman Gopal Rao, Swarga Manthan, Calicut</td>
+              <td>Smt. Lata Ramesh Kini-Daughter</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2625</td>
+              <td>Smt. G. Sulochana Rao Swarga Manthan, Calicut</td>
+              <td>Smt. Latha Ramesh Kini-Neice</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2628</td>
+              <td>90th Birthday of Late Shri Ramanand Shenoy (Father of Donor)</td>
+              <td>Shri Sunil R. Shenoy</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2631</td>
+              <td>Birth Centenary (4.10.2017) of our mother the Late Smt. Shevagoor Leelavathi Kamath W/o Late Shri
+                Shevagoor Krishna Kamath</td>
+              <td>Shri Shevagoor Pundalik Kamath</td>
+              <td>11,60,000</td>
+            </tr>
+            <tr>
+              <td>2632</td>
+              <td>In loving memory of our dear mother the Late Smt. Tara P. Kamath W/o Late Shri Vaderbettu Pandurang
+                Kamath</td>
+              <td>Smt. Sushila Kamath</td>
+              <td>1,60,000</td>
+            </tr>
+            <tr>
+              <td>2644</td>
+              <td>Sou Shanteri & Shri Madhav Ramakrishna Shanbhag Chittal of Hanehalli, Tq.Kumta</td>
+              <td>Shri Nagesh Madhav Shanbhag Chittal</td>
+              <td>1,00,021</td>
+            </tr>
+            <tr>
+              <td>2648</td>
+              <td>Late Shri K. Mohan Kudva</td>
+              <td>Shri Vivek Kudva</td>
+              <td>3,50,000</td>
+            </tr>
+            <tr>
+              <td>2657</td>
+              <td>Shri Prakash Pai & Smt. Vandana Pai, Hyderabad</td>
+              <td>Selves</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2664</td>
+              <td>In memory of the Late Smt. Rohini S. Rao & the Late Shri B.S. Rao on the occasion of former’s 100th
+                Birthday</td>
+              <td>Smt. Chandrakala Baliga</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2665</td>
+              <td>Late Mrs. Villoo Minoo Shroff</td>
+              <td>Mrs. Soona Minoo Shroff</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2672</td>
+              <td>Meera and Surathkal Narayan Kamath</td>
+              <td>Dr.(Mrs.) Chitra run Kamath</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2678</td>
+              <td>Pratiba M. Kamath & Shakuntala S Mallya</td>
+              <td>Neela Sanjeev Shenvi</td>
+              <td>5,25,000</td>
+            </tr>
+            <tr>
+              <td>2679</td>
+              <td>Surendranath Mallya</td>
+              <td>Neela Sanjeev Shenvi</td>
+              <td>4,75,000</td>
+            </tr>
+            <tr>
+              <td>2680</td>
+              <td>Vasudeva Prafulla Kamath</td>
+              <td>Neela Sanjeev Shenvi</td>
+              <td>4,75,000</td>
+            </tr>
+            <tr>
+              <td>2681</td>
+              <td>Haripanth & Seetha H. Kamath (Grand Father & Grand Mother)</td>
+              <td>Neela Sanjeev Shenvi</td>
+              <td>5,75,000</td>
+            </tr>
+            <tr>
+              <td>2686</td>
+              <td>Dr. S. Chandrakanth Nayak & Mrs. Pushpa C. Nayak</td>
+              <td>Mr. Rajiv C. Nayak & Mrs. Jyotsna R. Nayak</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2689</td>
+              <td>Late Shri Aravind Vikunth Mahale</td>
+              <td>Smt. Sujata Arvind Mahale</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2691</td>
+              <td>Late Shri Nagesh Shrinivas Bhandarkar Sirsi</td>
+              <td>Shri Mohan Ramachandrappa Hulekal</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2701</td>
+              <td>Shri Venkatesh Dattaram Kerkar & Smt. Vimla Venkatesh Kerkar</td>
+              <td>Selves</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2704</td>
+              <td>Late Shri Narayan P. Kamath</td>
+              <td>Ms. Shweta G. Pai</td>
+              <td>1,01,000</td>
+            </tr>
+            <tr>
+              <td>2711</td>
+              <td>Seth Mancherji Palloonji Contractor Charitable Trust</td>
+              <td>Self</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2712</td>
+              <td>Golden Wedding Anniversary</td>
+              <td>Dr.(Mrs.) Sharada J. Shenoy<br>Shri T.J. Shenoy</td>
+              <td>8,00,000</td>
+            </tr>
+            <tr>
+              <td>2716</td>
+              <td>Late Smt. Indira R. Kamat</td>
+              <td>The Maharashtra Executor & Trustee Co.Pvt. Ltd.<br>A/c Late Smt. Indira Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2717</td>
+              <td>Late K. Jagadish Shenoy</td>
+              <td>Shri Dinesh Shenoy K</td>
+              <td>1,25,000</td>
+            </tr>
+            <tr>
+              <td>2719</td>
+              <td>Late Shri Pandurang M. Pai</td>
+              <td>Shri Anant Pandurang Pai-son</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2720</td>
+              <td>Shri Yashwant Chittal & Smt. Malati Chittal</td>
+              <td>Dr. Ravindra Y. Chittal</td>
+              <td>1,33,750</td>
+            </tr>
+            <tr>
+              <td>2721</td>
+              <td>Late Karkala Narayana Sheshagiri & Rukmini Pai</td>
+              <td>Shri Sadananda & Smt. Sharada Pai</td>
+              <td>1,50,000</td>
+            </tr>
+            <tr>
+              <td>2722</td>
+              <td>Smt. Asha Vasant Kini</td>
+              <td>Shri M. Vasant Kini-Husband</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2726</td>
+              <td>Ramani Shenoy our Beloved mother & Metriach of our family</td>
+              <td>Smt. Sumitra Shenoy Sarma<br>Shri T. Ashok Shenoy</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2732</td>
+              <td>Miss (Late) Bharathi Pai P, Bangalore</td>
+              <td>Mrs. Usha A. Pandit<br>Dr. P. Pundalik Pai<br>Mrs. Kishori V. Rao</td>
+              <td>6,24,000</td>
+            </tr>
+            <tr>
+              <td>2736</td>
+              <td>Late Shri Kochi Vasudeva Pai</td>
+              <td>Shri Gurudas Vasudev Pai</td>
+              <td>2,02,000</td>
+            </tr>
+            <tr>
+              <td>2743</td>
+              <td>Late Smt Shanta & Late Shri Appa Govind Shanbhag-Sirsi</td>
+              <td>Shri Purushottam Appa Shanbhag-Sirsi</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2744</td>
+              <td>Late Smt. Vimala & Late Shri Anant Ganesh Pai-Kumta</td>
+              <td>Smt. Indira Purushottam Shanbhag & Shri Ganesh Anant Pai-Kumta</td>
+              <td>1,20,000</td>
+            </tr>
+            <tr>
+              <td>2745</td>
+              <td>Haleangady Ratnakar & Varadabai Kamath Family</td>
+              <td>Shri Prabhakar H. Kamath</td>
+              <td>1,19,583</td>
+            </tr>
+            <tr>
+              <td>2746</td>
+              <td>My Beloved Parents Tikkan (T.T. Shenoy) & Ramani Shenoy</td>
+              <td>Mrs. Sumitra Shenoy Sarma & Family</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2747</td>
+              <td>My Parents Late Shri Kudpi Shrinivas Shenoy & Late Smt. Sushila Bai</td>
+              <td>Kudpi Jagadish Shenoy</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2748</td>
+              <td>Smt. Radha Vaikunth Sonde</td>
+              <td>Dr. Vaikunth Sheshagirirao Sonde</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2749</td>
+              <td>Shri Sheshagiri Balakrishnarao Sonde</td>
+              <td>Dr. Vaikunth Shesharirirao Sonde</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2756</td>
+              <td>In memory of Shri K. Narayan Vaman Kamath- Elder Brother of Donor</td>
+              <td>Dr.(Smt.) Sharada J. Shenoy</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2763</td>
+              <td>In the memory of Smt. Vimala Venkatesh Pai</td>
+              <td>Shri R.L. Shenoy</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2764</td>
+              <td>Dr. V.R. Prabhu Birth Centenary Endowment</td>
+              <td>Mrs. Vimala & Mr. Jagannath Prabhu<br>Dr.(Mrs.) Andrea & Dr. Somnath Prabhu<br>Mrs. Shikhadeep & Mr.
+                Raghunath Prabhu</td>
+              <td>2,80,005</td>
+            </tr>
+            <tr>
+              <td>2766</td>
+              <td>Late B.M. Ananda Kamath & Late Meera Ananda Kamath</td>
+              <td>Shri Vinod Ananda Kamath</td>
+              <td>11,00,000</td>
+            </tr>
+            <tr>
+              <td>2767</td>
+              <td>Late Hanumanth Laxman Kamath & Geeta Hanumanth Kamath</td>
+              <td>Mrs. Seema Vinod Kamath</td>
+              <td>6,00,000</td>
+            </tr>
+            <tr>
+              <td>2768</td>
+              <td>In memory of Late Smt. Narayani Achuta Shenoy</td>
+              <td>Shri R.L. Shenoy</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2769</td>
+              <td>Vimala Gaitonde</td>
+              <td>Smt. Geeta Ganapati Gaitonde</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2771</td>
+              <td>Late Sri B.N. Kamath & Late Smt. Sitabai Endowment Fund</td>
+              <td>Mr. Ramnath & Rajashree Pai</td>
+              <td>1,00,001</td>
+            </tr>
+            <tr>
+              <td>2772</td>
+              <td>Late Shri Shrinivas Ramanath Shenoy, Kinnimulki, Udupi</td>
+              <td>Priya Dilip Prabhu</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2773</td>
+              <td>Late Smt. Ramabai Ramanath Shenoy, Kinnimulki, Udupi</td>
+              <td>Priya Dilip Prabhu</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2774</td>
+              <td>Late Smt. Kamakshi Ramanath Shenoy, Kinnimulki, Udupi</td>
+              <td>Priya Dilip Prabhu</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2775</td>
+              <td>Late Shri Ramanath Shenoy Kinnimulki, Udupi</td>
+              <td>Priya Dilip Prabhu</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2776</td>
+              <td>Dr. V.R. Prabhu (Appumaam) Endowment</td>
+              <td>Dr. Suhas Venkatesh Prabhu</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2779</td>
+              <td>Late Shantabai Laxman Kamat and Late Laxman Ranga Kamat</td>
+              <td>Shri Ashok Laxman Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2780</td>
+              <td>Late Chaya Amarnath Kamat and Late Amarnath Shrinivas Kama-Parents</td>
+              <td>Mrs. Anagha Ashok Kamat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2781</td>
+              <td>Mrs. Rajalakshmi Vaman Kamath</td>
+              <td>Mr. K.V. Kamath</td>
+              <td>35,00,000</td>
+            </tr>
+            <tr>
+              <td>2783</td>
+              <td>Mrs. Rajalakshmi Vaman Kamath</td>
+              <td>Shri Ajay Kamath</td>
+              <td>3,50,000</td>
+            </tr>
+            <tr>
+              <td>2784</td>
+              <td>Late H. Radha Pai & Late H. Gopalkrishna Pai</td>
+              <td>Smt. Niveditha Venkatesh Shanbhag</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2793</td>
+              <td>Shri Kaup Kamalaksha Hari Shenoy on the occasion of his completing 82 years</td>
+              <td>Self</td>
+              <td>2,11,000</td>
+            </tr>
+            <tr>
+              <td>2795</td>
+              <td>Shri Vikunth Sheshgirirao Sonde</td>
+              <td>Shri V.S. Sonde Estate</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2797</td>
+              <td>Shri Gurunath Venkatrao Dhakappa</td>
+              <td>Shri Rajesh Gurunathrao Dhakappa</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2804</td>
+              <td>Shri Ullal Suryanarayan Nayak</td>
+              <td>Shri Ullal Chandrashekhar Nayak, Shri U. Subramanya Nayak</td>
+              <td>1,05,000</td>
+            </tr>
+            <tr>
+              <td>2807</td>
+              <td>Smt. Indubala Venkatraya Bhat</td>
+              <td>Shri Dinesh Venkatraya Bhat</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2812</td>
+              <td>Late Smt. Vijaya Gurunath Dhakappa</td>
+              <td>CA Rajesh Gurunath Dhakappa</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2814</td>
+              <td>Ramdas Keshav Kamat & Leena Ramdas Kamat</td>
+              <td>Shri Aashish Ramdas Kamat</td>
+              <td>7,50,000</td>
+            </tr>
+            <tr>
+              <td>2819</td>
+              <td>Late M. Annappa Pai</td>
+              <td>Shri Ajith Pai</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2820</td>
+              <td>Dr. S. Giridhar Bhat</td>
+              <td>Smt. Nalini Giridhar Bhat</td>
+              <td>2,50,000</td>
+            </tr>
+            <tr>
+              <td>2823</td>
+              <td>Ganapati D. Gaitonde</td>
+              <td>Smt. Geeta Ganapati Gaitonde</td>
+              <td>2,00,000</td>
+            </tr>
+            <tr>
+              <td>2830</td>
+              <td>Late Rayappa Ramkrishna Shanbhag & Late Laxmibai Rayappa Shanbhag</td>
+              <td>Shri Shashikant Rayappa Shanbhag</td>
+              <td>50,00,000</td>
+            </tr>
+            <tr>
+              <td>2831</td>
+              <td>Dr. (Mrs.) Vijayalakshmi & Dr. S.V. Nadig, Hubli</td>
+              <td>Smt. Juthika Shrirang Nadig</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2832</td>
+              <td>Late Tonse Upendra Shenai</td>
+              <td>Smt. Sunanda Krishna Rau</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2833</td>
+              <td>Late Leela Bai Upendra Shenai</td>
+              <td>Smt. Sunanda Krishna Rau</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2834</td>
+              <td>Late Shantabai Upendra Shenai</td>
+              <td>Smt. Sunanda Krishna Rau</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>2835</td>
+              <td>Mrs. Lalitha K. Prabhu</td>
+              <td>Shri Gopal Srinivas Pai</td>
+              <td>1,00,008</td>
+            </tr>
+            <tr>
+              <td>2839</td>
+              <td>Sanjeev Damodar Shenvi (Husband of the Donor)</td>
+              <td>Neela Shenvi</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2844</td>
+              <td>Ravindra Purushottam Bhat</td>
+              <td>Shri Purushottam Anant Bhat</td>
+              <td>3,00,000</td>
+            </tr>
+            <tr>
+              <td>2848</td>
+              <td>M. Vasudev Prabhu</td>
+              <td>Shanti Vasudev Prabhu</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>2851</td>
+              <td>Dr. Ajit V. Rao</td>
+              <td>Smt. Malini Ajit Rao</td>
+              <td>5,00,000</td>
+            </tr>
+            <tr>
+              <td>FLSE 12</td>
+              <td>Bhatkal Endowment</td>
+              <td>Shri R.R. Kamat</td>
+              <td>2,05,000</td>
+            </tr>
+            <tr>
+              <td>FLSE 36</td>
+              <td>Self</td>
+              <td>Smt. Ajith A. Nayak</td>
+              <td>3,00,000</td>
+            </tr>
+            <tr>
+              <td>FLSE 37</td>
+              <td>Self</td>
+              <td>Prabhu Family Charitable Trust</td>
+              <td>4,50,000</td>
+            </tr>
+            <tr>
+              <td>FLSE 38</td>
+              <td>Self</td>
+              <td>Shri S.P. Kamath</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>FLSE 39</td>
+              <td>Self</td>
+              <td>Basrur Vijendra Bhandary</td>
+              <td>6,27,000</td>
+            </tr>
+            <tr>
+              <td>FLSE 40</td>
+              <td>Late Damodar Narasinha Bhat & Late Govindrao Narasinha Bhat</td>
+              <td>Shri Vasudev Narasinh Hegde</td>
+              <td>1,00,000</td>
+            </tr>
+            <tr>
+              <td>FLSE 41</td>
+              <td>Jayashree Radhakrishna Kamat</td>
+              <td>Shri Radhakrishna Ram Kamat</td>
+              <td>1,11,111</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row p-b4">
+          <div class="col-md col-6">
+            <img src="images/logo/gsb.png">
+            <p class="no-mr p-t2">
+              <a href="tel:02235776611">
+                <form action="">
+                  <i class="fas fa-phone-alt mr-r7"></i>
+                  <span class="pd-l"> (022)35776611</span>
+                </form>
+              </a>
+            </p>
+            <p class="no-mr"> <i class="fas fa-globe mr-r7"></i>
+              <span class="pd-l">
+                <a href="www.gsbscholarshipleague.org"><span>www.gsbscholarshipleague.org</span></a>
+              </span>
+            </p>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6">
+            <ul>
+              <li><a class="txt-White" href="index.html">Home</a></li>
+              <li><a class="txt-White" href="mcp.html">Managing Committee Profile</a></li>
+              <li><a class="txt-White" href="performance.html">Performance</a></li>
+              <li><a class="txt-White" href="leagueHistory.html">League's History</a></li>
+              <li><a class="txt-White" href="leagueProfile.html">League's Profile</a></li>
+              <li><a class="txt-White" href="events.html">Events</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6">
+            <ul>
+              <li><a class="txt-White" href="help.html">How Can You Help ?</a></li>
+              <li><a class="txt-White" href="ourBankers.html">Our Bankers</a></li>
+              <!-- <li><a class="txt-White" href="contribution.html">Foreign Contribution</a></li> -->
+              <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+              <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6">
+            <ul>
+              <li><a class="txt-White" href="New_Endowment.html">New Endowment</a></li>
+              <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
+              <li><a class="txt-White" href="downloadForm.html">Guidelines to students</a></li>
+              <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <span>Copyright@2008 GSB Scholarship League. All rights reserved.</span>
+        <span class="txt-right"><a href="https://www.24framesdigital.com/" target="_blank">Powered by 24 Frames
+            Digital</a></span>
+      </div>
+    </div>
+    <span class="scroll-top-arrow"><a><i class="fas fa-angle-up"></i></a></span>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js">
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('#example').DataTable({
+        "ordering": false
+      });
+
+    });
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

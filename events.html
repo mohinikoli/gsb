@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="icon" type="image/png" sizes="100x100" href="images/favicon-96x96.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/index.js"></script>
+
+    <title>News Item</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand " href="index.html">
+                        <img src="images/logo/gsb.png" class="logo">
+                    </a>
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav justify-content-end">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="performance.html">Performance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="leagueHistory.html">History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="leagueProfile.html">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="help.html">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactUs.html">Contact</a>
+                            </li>
+                            <!-- <li>
+                <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+              </li> -->
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- modal -->
+            <div class="modal-overlay" id="modalOverlay">
+                <div class="modal" id="menuModal">
+
+                    <a class="close-modal" id="closeModal">
+                        <svg viewBox="0 0 20 20">
+                            <path fill="#000000"
+                                d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+                            </path>
+                        </svg>
+                    </a><!-- close modal -->
+
+                    <div class="modal-content" id="modalContent">
+                        <a class="navbar-brand ">
+                            <img src="images/logo/gsb.png" class="logo1">
+                        </a>
+                        <ul>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="performance.html">Performance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="leagueHistory.html">League's History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mcp.html">Managing Committe Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="leagueProfile.html">League's Profile</a>
+                            </li>
+                            <!-- <li class="nav-item ">
+                <a class="nav-link" href="Scholarship.html">Scholarship</a>
+              </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="help.html">How Can You Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ourBankers.html">Our Bankers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contribution.html">Foreign Contribution</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="highlights.html">Highlight Of The Month</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactUs.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="annualReport.html">Annual Report</a>
+                            </li>
+                        </ul>
+                    </div><!-- content -->
+                </div><!-- modal -->
+            </div><!-- overlay -->
+        </div>
+
+        <div class="section2">
+            <h1 class="mr-bt5 title">Events</h1>
+        </div>
+        <div class="container">
+
+            <!-- news item -->
+            <div class=" mr-tb no-pd">
+                <!-- <img src="images/Mangalore.JPG" alt="" class="img-fluid"> -->
+                <!-- <div class="container p-t">
+                    <h3 class="text-center">To all students who seek application forms for Scholarship for the year
+                        2024-25</h3>
+                    <br>
+                    <p class="mb_3">
+                        GSB Scholarship League’s server is not active till 1 st of AUGUST 2024.
+                    </p>
+                    <p class="mb_3">
+                        Please send your request for application forms for Scholarship by giving the following details
+                        on
+                        <a href=""> info@gsbscholarshipleague.org</a>
+                    </p>
+                    <p class="mb_3">
+                        <ul>
+                            <li>Name of the student</li>
+                            <li>Surname</li>
+                            <li>ONE mobile number ONLY on which you want to get the application form</li>
+                            <li>Student’s Adhar Card number</li>
+                        </ul>
+                    </p>
+                    <p class="mb_3">
+                        Please DO NOT send any more details
+                    </p>
+                    <p class="mb_3">
+                        After sending this email. Within 15 days time you will get a message on your mobile number
+                        which leads to a link and that gives you an Application form.
+                    </p>
+                    <p class="mb_3">
+                        Fill up all columns.
+                    </p>
+                    <p class="mb_3">
+                        Upload the required documents , like, Marksheet, Fee receipt, Student Study certificate from
+                        the School / college &amp; Adhar Card.
+                    </p>
+                    <br>
+                    <p class="mb_3">
+                        Finally SUBMIT the application form and you get THANK YOU , which completes your sending
+                        your form.
+                    </p>
+                    <p class="mb_3">
+                        IF you have any doubt please call up / send an enquiry email before SUBMITTING the form.
+                        Once you submit the form. You will not get a second chance for correction.
+                    </p>
+                    <p class="mb_3">
+                        Thank you for following theInstructions.
+                    </p>
+                    <br>
+
+                    <p class="">
+                        Smt. Gita R.Pai <br>
+                        Chairperson <br>
+                        GSB Scholarship League
+                    </p>
+                </div> -->
+                <!-- <div class="container p-t">
+                    <h3 class="text-center">Student applications, for the year 2024-25 Of The GSB Scholarship League,
+                        Mumbai</h3>
+                    <br>
+                    <p class="mb_3">
+                        Dear Editor,
+                    </p>
+                    <br>
+                    <p class="mb_3">
+                        Since the Pandemic 2020 , GSB Scholarship League has stopped giving hard copies of Application
+                        forms to the poor and needy G S B students who want to apply for scholarship.
+                    </p>
+                    <p class="mb_3">
+                        All students whose names and mobile numbers are registered with the League will be sent a link
+                        on their mobile numbers in the month of August 2024, and if for some reason the student fails to
+                        get the application form, he / she can apply for the application form on email , <a
+                            href="info@gsbscholarshipleague.org">info@gsbscholarshipleague.org</a> from August 1st 2024.
+                    </p>
+                    <p class="mb_3">
+                        Details of all instructions to get the application forms and to fill up the form is given.
+                        PLEASE read the <b>instructions</b> carefully, fill up the form and SUBMIT.
+                    </p>
+                    <p class="mb_3">
+                        Write your Bank details giving utmost importance to fill up correct details. All chosen students
+                        will get the scholarship through NEFT in their bank accounts. About a fortnights time after the
+                        last date, go through your bank statement and see that your scholarship amount has appeared in
+                        your Bank statement.
+                    </p>
+                    <p class="mb_3">
+                        <strong> No bank cheques will be issued.</strong>
+                    </p>
+                    <p class="mb_3"><strong> ONLINE</strong> applications are simple, applying is simple, minimum
+                        documents to
+                        attach.
+                    </p>
+
+                    <p class="mb_3">
+                        In spite of this if you need to ask some more details, please send emails on <a
+                            href="info@gsbscholarshipleague.org">info@gsbscholarshipleague.org</a> All queries will be
+                        replied.
+                    </p>
+                    <p class="mb_3">
+                        Last date for receiving application forms will be October 31st 2024. The server closes on that
+                        day. Late applications will be rejected by the server.
+                    </p>
+                    <p class="mb_3">
+                        School going students in small villages, whose parents are not tech savvy need some help.
+                        College going students / seniors, can Help them to get application forms, and also fill up the
+                        application forms.
+                    </p>
+                    <p class="mb_3">
+                        You can always call us and we are ready to help you.
+                    </p>
+                    <p class="mb_3">
+                        <b>Funds permitting League might support some post graduate applicants.</b>
+                    </p>
+                    <br>
+
+                    <p class="">
+                        Smt. Gita R.Pai <br>
+                        Chairperson <br>
+                        GSB Scholarship League
+                    </p>
+                </div> -->
+
+                  <div class="container text-center">
+                    <h3 class="text-center">4<sup>th</sup> May Annual Program - PILLARS OF STRENGTH</h3>
+                  
+                    <br>
+                    <div class="award_images">
+                        <img src="images/pillars_of_strength_3.jpg" alt="" class="img-fluid pillars">
+                        <img src="images/pillars_of_strength_4.jpg" alt="" class="img-fluid pillars">
+                        <img src="images/pillars_of_strength_5.jpg" alt="" class="img-fluid pillars">
+                        <img src="images/pillars_of_strength_6.jpg" alt="" class="img-fluid pillars">
+                        <img src="images/pillars_of_strength_7.jpg" alt="" class="img-fluid pillars">
+                        <img src="images/pillars_of_strength_8.jpg" alt="" class="img-fluid pillars">
+                        <img src="images/pillars_of_strength_9.jpg" alt="" class="img-fluid pillars">
+                        <img src="images/pillars_of_strength_10.jpg" alt="" class="img-fluid pillars">
+
+
+                        
+                    </div>
+                    <br>
+
+                  </div>
+
+                <div class="container">
+                    <h3 class="text-center">18th January Program - MET THE DONOR</h3>
+                    <br>
+                    <div class="award_images2">
+                        <img src="images/1.JPG" alt="" class="img-fluid">
+                        <img src="images/2.JPG" alt="" class="img-fluid">
+                    </div>
+                    <br>
+                    <p>GSB Scholarship League held it s annual program of MEET THE DONOR in Mangalore at Raman Pai hall
+                        on Saturday the 18th of January.</p>
+
+                    <p>Students who were told in advance about this program came to the Hall from all nearby places,
+                        some even came from Bangalore / Mysore/ Kochi.</p>
+
+                    <p>On behalf of Prabhu Family Charitable Trust, the following members were present:</p>
+                    <ul>
+                        <li>Mrs. Shalini Prabhu</li>
+                        <li>Mrs. Ponam Prabhu</li>
+                        <li>Mr. Avinash Prabhu</li>
+                        <li>Mr. Raghavan R</li>
+                        <li>Mr. Ravalnath Kamath</li>
+                        <li>Mr. Suresh</li>
+                    </ul>
+
+                    <p>The meeting started with Vaishnavi Pai, one of the students, singing a Ganapathi prayer.</p>
+                    <p>Smt. Gita R. Pai welcomed all and guided students. She emphasized the importance of following the
+                        scholarship guidelines, attaching necessary documents, and adhering strictly to deadlines to
+                        ensure the continuity of the scholarship amount.</p>
+                    <p>She also warned students about common mistakes that could lead to the loss of scholarship
+                        amounts.</p>
+
+                    <p>She invited some final year students of 3 / 4 year degree students to talk and give their opinion
+                        on getting this Prabhu Charitable funds. Student’s reaction was worth listening. This has
+                        reduced their, worries of paying college fees and the applying for the bank loan for education.
+                    </p>
+
+                    <p>Mr.Suresh, spoke to the students and gave them the incentive of offering internship / job at
+                        Quest Global. There was a loud applause from students. Mrs..Shalini Prabhu and Mr.Avinash Prabu,
+                        members of Prabhu family spoke on Student Scholrship family.</p>
+                    <p>Sudha Prabhu on behalf of the League, proposed a vote of thanks, Special thanks were given to</p>
+                    <ul>
+                        <li>Smt. Ujwala Mallya</li>
+                        <li>Sri K. N. Bhat</li>
+                        <li>Smt. Lata Kamath</li>
+                        <li>Smt. Akshata Sudhir Pai</li>
+                    </ul>
+                    <br>
+                    <img src="images/3.JPG" class="img-fluid" alt="">
+                </div>
+                <div class="container p-t" style="display: none;">
+                    <h3 class="text-center">News item to be published on local papers, Student applications, GSB
+                        Scholarship
+                        League
+                        2023-23</h3>
+                    <p class="mb_3">
+                        In view of the present prevailing conditions, GSB Scholarship League needs to communicate to its
+                        beneficiary
+                        students with regards to the Application forms for the academic year 2023-24 for the
+                        <strong>economically
+                            needy
+                            students</strong>, merit counts later.
+                    </p>
+                    <p class="mb_3">
+                        Since the Pandemic 2020 , GSB Scholarship League has stopped giving hard copies of Application
+                        forms to the
+                        poor and needy G S B students who want to apply.
+                    </p>
+                    <p class="mb_3">
+                        All students whose names and mobile numbers are registered with the League will be sent a link
+                        on their
+                        mobile numbers in the month of August 2023.
+                    </p>
+                    <p class="mb_3">
+                        All instructions to get the application forms and to fill up the form is given. PLEASE read the
+                        instructions
+                        carefully, fill up the form and SUBMIT through ONLINE only.
+                    </p>
+                    <p class="mb_3">
+                        Write your Bank details giving utmost importance to fill up correct details. All chosen students
+                        will get
+                        the scholarship through NEFT in their bank accounts. About a fortnights time after the last
+                        date, go through
+                        your bank statement and see that your scholarship amount has appeared in your Bank statement.
+                    </p>
+                    <p class="mb_3">
+                        <strong> No bank cheques will be issued.</strong>
+                    </p>
+                    <p class="mb_3"><strong> ONLINE</strong> applications are simple, applying is simple, minimum
+                        documents to
+                        attach.
+                    </p>
+
+                    <p class="mb_3">
+                        In spite of this if you need to ask some more details, please send emails on <a
+                            href="info@gsbscholarshipleague.org">info@gsbscholarshipleague.org</a> All queries will be
+                        replied.
+                    </p>
+                    <p class="mb_3">
+                        Last date for receiving application forms will be October 31st 2023. The server closes on that
+                        day. Late
+                        applications will be rejected by the server.
+                    </p>
+                    <p class="mb_3">
+                        School going students in small villages, whose parents are not tech savvy need some service.
+                        College going
+                        students / seniors, can Help them to get application forms, and also fill up the application
+                        forms.
+                    </p>
+                    <p class="mb_3">
+                        <b>Funds permitting League might support some post graduate applicants.</b>
+                    </p>
+                    <br>
+
+                    <p class="">
+                        Gita R.Pai <br>
+                        Chairperson <br>
+                        GSB Scholarship League
+                    </p>
+                </div>
+            </div>
+            <div class="mr-tb">
+                <h3 class="text-center">GSB Scholarship League's Program PILLARS OF STRENGTH</h3>
+                <br>
+                <div class="award_images">
+                    <img src="images/pillars_of_strength_1.jpg" alt="" class="img-fluid pillars">
+                    <img src="images/pillars_of_strength_2.jpg" alt="" class="img-fluid pillars">
+
+                   
+                </div>
+                <div class="container p-t" style="">
+                    <p>The GSB Scholarship League, oganised an Annual program which is called, PILLARS OF STRENGTH.
+                    </p>
+                    <p>This program is to formally invite the Mumbai donors and thank them, get some of the opinion /
+                        suggestions from them regarding the Scholarship to students.</p>
+                    <p>Mumbai's well known, Oncologist, Dr. Ramakant Deshpande was the chief guest.</p>
+                    <p>President of the League, Sri S. S. Bhat sought the blessings of Almighty and welcomed the
+                        audience, Sri Ganesh Shanbhag, Secretary introduced the chief guest.</p>
+                    <p>The Chairperson of the League, Smt. Gita R. Pai introduced the following 10 donors and requested
+                        them each to give their opinion on the League's workings / disbursement of funds, and fund
+                        collection. There were very good suggestions from the donors.</p>
+                    <p>Sri G.M.Kamat carried League's report which was printed in 1919 and said that the 2 Annas given
+                        to the applicant student in that year was perhaps much more valuable that Rs.2,500 given for the
+                        students now. Gurudutt Gaitonde, Vasant Kamath and Neela Shenvi suggested that those supported
+                        students should show their gratitude by supporting the League once they start earning.</p>
+                    <p>Smt. Anita Pai said there are many newer courses for newer careers, which should be supported.
+                        Dr. Sudhakar Shenai, appreciated the work being done to help the needy students. Sri Kukkunoor
+                        Madhav Kini narrated his personal experience as to how he has benefitted from the League and the
+                        pleasure he gets in donating to the League.</p>
+                    <p>It was interesting to listen to all the speakers. Smt. Gita Pai aptly answered all the doubts the
+                        donors had regarding the collection of funds and disbursal of funds.</p>
+                    <p>Dr. Ramakant Deshpande had a lot of inputs , based on the donors suggestions. Deshpande feels,
+                        community is very generous, and the education has also become very expensive. So collecting more
+                        money and supporting more needy students should be a good step forward. He appreciated the
+                        creators of this League and appreciated the idea of supporting the education of the NEEDY.</p>
+                    <p>All the guests were honoured. Dr. Niranjani Nayak & Sri Raghuveer Nayak were thanked for
+                        sponsoring this program.</p>
+                    <p>Secretary Sri Madhukar Pai proposed a hearty vote of thanks.</p>
+                    <p>As in the past Wadala Mutt authorities were generous in supporting League's activities.</p>
+                    <p>Special thanks were given to Sri Vinayak Shanbhag for sponsoring delicious snacks</p>
+                    <p class="">
+                        Gita R. Pai <br>
+                        Chairperson
+                    </p>
+                </div>
+
+            </div>
+            <div class="mr-tb">
+                <img src="images/league.jpg" alt="">
+            </div>
+
+            <!-- News item of PILLARS OF STRENGTH -->
+            <div class="mr-tb">
+                <img src="images/pillars_of_strength.jpg" alt="" class="img-fluid">
+                <div class="container p-t" style="">
+                    <h3 class="text-center">Pillars Of Strength</h3>
+                    <br>
+                    <p>GSB Scholarship League, organised its Annual get together of Donors on 1st of May at Dwarkanath
+                        Bhavan Hall. Most of them were repeat donors . The Chief guest couple was Smt. & Sri Shashikant
+                        Shanbhag, and Industrialist and a philanthropist. Supporting the education of the needy was his
+                        main moto for which he supports the League
+                    </p>
+                    <p>League's president, Sri S.S. Bhat welcomed the guest and the audience, Sri Ganesh Shanbhag,
+                        Secretary, introduced the chief guests. Smt. Gita R.Pai, Chairperson, of the League, elaborated
+                        and explained why it is necessary to hold such a program. Donors send money to the League
+                        generously and it is the duty of the Managing committee people to meet them in such programs and
+                        assure them that the funds are best utilised and lot of care is being taken to see that the
+                        funds go to the needy and poor students only.</p>
+                    <p>Sri Shashikant Shanbhag, was very happy about League's working, he donated an amount of
+                        Rs.50,00,000 in the name of his parents, Sri Rayappa Shanbhag.</p>
+                </div>
+            </div>
+
+
+            <div class="mr-tb">
+                <img src="images/member.jpg" alt="">
+            </div>
+            <div class="mr-tb">
+                <div class="container p-t">
+                    <h3 class="text-center">Meet The Donor Program In Mangalore </h3>
+                    <p>GSB Scholarship League is over 112 years old with the sole mission to support the education of
+                        the Poor and NEEDY students. Prabhu Family Charitable Trust has the same ideas of helping the
+                        education of the needy. Since 2016 these two organisations have been jointly supporting many
+                        students, In the last 5 years 54 Engineering students have successfully completed their
+                        education and have got good placements. There was an investment of about Rs.26 Lakhs on these
+                        students. Smt. Gita R. Pai Chairperson of the GSB Scholarship League, gave these statistics, In
+                        her inaugural speech to the 70 odd PFTC students gathered in Canara College Hall during the
+                        PFTC’s MEET THE DONOR PROGRAM
+                    </p>
+                    <p>Srinidhi sang Ganapati prayer to invoke the blessings of Lord. Ms. Poonam Prabhu, on behalf of
+                        the PFCT very charismatically told about the company Quest Global which Mr. Ajit Prabhu is
+                        heading. The students were amazed to know about Mr.Ajit Prabhu’s back ground which was simple
+                        and humble. She told, it is only good education and hard work that will lead to the desired
+                        destination of success. Mr. Niket Vice President of Quest Global in his brilliant speech told
+                        the
+                        students about discipline followed in the Navy, where he was earlier working, without wasting
+                        time and keeping the discipline and diligently working leads to the success. Mr.Suresh ,
+                        Trustee, of PFCT requested the students to take an oath that they would support at least two
+                        students when they financially become independent, so that a day will come when the entire
+                        society will become fully educated.</p>
+                    <p>Some final year students were asked to give feedback and their personal experience on getting
+                        PFCT support for all 4 years. How difficult it is to manage and how easily the 4 years of
+                        education were spent was the general opinion expressed by students. They were all full of praise
+                        to GSB Scholarship League and Prabhu Family Charitable Trust.</p>
+                    <p>Smt.Gita Pai, Chairperson of the Scholarship League, thanked the Authorities of Canara High
+                        School, PFCT authorities, all the students present for making the program a wonderful one. All
+                        those present were asked to join for sumptuous lunch which was ready as students had to leave
+                        for their next destinations.</p>
+                </div>
+            </div>
+            <div class="mr-tb">
+                <img src="images/Donor_program_manglore.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row p-b4">
+                    <div class="col-md col-6">
+                        <img src="images/logo/gsb.png">
+                        <p class="no-mr p-t2"> <a href="tel:02235776611">
+                                <form action="">
+                                    <i class="fas fa-phone-alt mr-r7"></i>
+                                    <span class="pd-l"> (022)35776611</span>
+                                </form>
+                            </a>
+                        </p>
+                        <p class="no-mr"> <i class="fas fa-globe mr-r7"></i>
+                            <span class="pd-l">
+                                <a href="www.gsbscholarshipleague.org"><span>www.gsbscholarshipleague.org</span></a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-6">
+                        <ul>
+                            <li><a class="txt-White" href="index.html">Home</a></li>
+                            <li><a class="txt-White" href="mcp.html">Managing Committee Profile</a></li>
+                            <li><a class="txt-White" href="performance.html">Performance</a></li>
+                            <li><a class="txt-White" href="leagueHistory.html">League's History</a></li>
+                            <li><a class="txt-White" href="leagueProfile.html">League's Profile</a></li>
+                            <li><a class="txt-White" href="events.html">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-6">
+                        <ul>
+                            <li><a class="txt-White" href="help.html">How Can You Help ?</a></li>
+                            <li><a class="txt-White" href="ourBankers.html">Our Bankers</a></li>
+                            <!-- <li><a class="txt-White" href="contribution.html">Foreign Contribution</a></li> -->
+                            <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+                            <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
+                            <li><a class="txt-White" href="membership.html">Membership</a></li>
+                            <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-6">
+                        <ul>
+                            <li><a class="txt-White" href="New_Endowment.html">New Endowment</a></li>
+                            <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
+                            <li><a class="txt-White" href="downloadForm.html">Guidelines to students</a></li>
+                            <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span>Copyright@2008 GSB Scholarship League. All rights reserved.</span>
+                <span class="txt-right">
+                    <a href="https://www.24framesdigital.com/" target="_blank">Powered by 24 Frames Digital</a>
+                </span>
+            </div>
+        </div>
+        <span class="scroll-top-arrow"><a><i class="fas fa-angle-up"></i></a></span>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

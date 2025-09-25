@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="100x100" href="images/favicon-96x96.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/index.js"></script>
+
+  <title>Highlight Of The Month</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    h1, h5, h4 {
+        color: #2c3e50;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+</style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand " href="index.html">
+            <img src="images/logo/gsb.png" class="logo">
+          </a>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="performance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueHistory.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueProfile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact</a>
+              </li>
+              <!-- <li>
+                <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+              </li> -->
+            </ul>
+          </div>
+          <div>
+            <button class="menu-icon"><i class="ri-menu-fill "></i></button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- modal -->
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="menuModal">
+
+          <a class="close-modal" id="closeModal">
+            <svg viewBox="0 0 20 20">
+              <path fill="#000000"
+                d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+              </path>
+            </svg>
+          </a><!-- close modal -->
+
+          <div class="modal-content" id="modalContent">
+            <a class="navbar-brand ">
+              <img src="images/logo/gsb.png" class="logo1">
+            </a>
+            <ul>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="performance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueHistory.html">League's History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mcp.html">Managing Committe Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leagueProfile.html">League's Profile</a>
+              </li>
+              <!-- <li class="nav-item ">
+                <a class="nav-link" href="Scholarship.html">Scholarship</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">How Can You Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourBankers.html">Our Bankers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contribution.html">Foreign Contribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="highlights.html">Highlight Of The Month</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="annualReport.html">Annual Report</a>
+              </li>
+            </ul>
+          </div><!-- content -->
+        </div><!-- modal -->
+      </div><!-- overlay -->
+    </div>
+
+    <div class="section2">
+      <h1 class="mr-bt5 title">Highlight Of The Month</h1>
+    </div>
+    <div class="container">
+      <div class="mr-tb">
+        <h4>Highlights of the Month for December 2024</h4>
+        <p>The December meeting of the Trustees and the Managing Committee members was presided over by the Chairperson
+          Smt. Gita Pai.</p>
+        <p>Everyone was updated that, as on date, there is no change in FCRA status and that the Charity Commissioner
+          order for change reports for 2023 AGM has been received on 1st Jan 2025.</p>
+
+        <h4>Admission of Patrons and Acceptance of Endowments & Donations</h4>
+        <p>Application for Patronship received from N. Gajanan Vaman Prabhu was placed before the members and
+          unanimously approved allotting him membership no. P – 1648.</p>
+
+        <h4>Funds Inflow for December 2024</h4>
+        <ul>
+          <li>Donations: Rs. 75,000/-</li>
+          <li>Others (Advertisements): Rs. 40,000/-</li>
+          <li>FSE (New): Rs. 1,00,000/-</li>
+          <li>FSE (Addition to Existing): Rs. 2,77,000/-</li>
+        </ul>
+        <p><strong>Total amount received: Rs. 4,92,000/-</strong></p>
+
+        <h4>Major Donations</h4>
+        <p>Shri. Shashikant Shanbhag donated Rs. 30 lakhs to support 1st-year Engineering Students for the next 4 years.
+        </p>
+        <p>Ms. Soona M. Shroff donated Rs. 20 lakhs to support students pursuing 3-year & 4-year degrees starting from
+          2025.</p>
+
+        <h5>GSBSL Scholarship 2024-25 Final Disbursement</h5>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>No. of Students</th>
+            <th>Per Capita Disbursement (Rs.)</th>
+            <th>Total (Rs.)</th>
+          </tr>
+          <tr>
+            <td>Schools</td>
+            <td>695</td>
+            <td>2,500</td>
+            <td>17,37,500</td>
+          </tr>
+          <tr>
+            <td>Junior College</td>
+            <td>530</td>
+            <td>3,000</td>
+            <td>15,90,000</td>
+          </tr>
+          <tr>
+            <td>Diploma</td>
+            <td>23</td>
+            <td>4,000</td>
+            <td>92,000</td>
+          </tr>
+          <tr>
+            <td>Degree</td>
+            <td>503</td>
+            <td>5,000</td>
+            <td>25,15,000</td>
+          </tr>
+          <tr>
+            <td>Post Graduates</td>
+            <td>129</td>
+            <td>6,000</td>
+            <td>7,74,000</td>
+          </tr>
+          <tr>
+            <td>Prof. Post Graduate</td>
+            <td>3</td>
+            <td>7,000</td>
+            <td>21,000</td>
+          </tr>
+          <tr>
+            <td>Engineering</td>
+            <td>487</td>
+            <td>8,000</td>
+            <td>38,96,000</td>
+          </tr>
+          <tr>
+            <td>Medical and Allied Courses</td>
+            <td>43</td>
+            <td>8,000</td>
+            <td>3,44,000</td>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <th>2,413</th>
+            <th></th>
+            <th>1,09,69,500</th>
+          </tr>
+        </table>
+<br>
+        <h5>Support-a-Student Scholarship 2024-25</h5>
+        <ul>
+          <li>Old students under Support-a-Student scheme (22): Rs. 6.80 lakhs</li>
+          <li>New students under Support-a-Student scheme (2): Rs. 0.50 lakhs</li>
+          <li>Students sponsored by Mr. Shashikant Shanbhag (30): Rs. 22.50 lakhs</li>
+        </ul>
+        <p><strong>Total: Rs. 29.24 lakhs</strong></p>
+
+        <h5>Prabhu Family Charitable Trust Scholarship</h5>
+        <p>Rs. 45.60 lakhs were distributed to 83 students.</p>
+
+        <h5>Investments of Funds</h5>
+        <p>K. N. Bhat updated the members on bank account balances as on 11th Jan 2025 and mentioned FD maturities from
+          Saraswat Bank due on 15th March 2025 and 24th May 2025.</p>
+
+        <p>The meeting ended with a vote of thanks to the Chair and Smt. Sudha Prabhu for sponsoring snacks.</p>
+
+        <p><strong>Hon Secretary &nbsp;&nbsp;&nbsp;&nbsp; Chairperson</strong></p>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="mr-tb">
+        <p>"The present Pandemic situation has forced the GSB Scholarship League to get into the new Era of software. As
+          lockdown forced us to confine to the homes . we were unable to carry out the work of scholarship distribution
+          etc. </p>
+        <p>Smt.Vijaya Kamath, Managing Director of TTH Company, League's supporter in all ways came to our rescue. She
+          convinced the Managing Committee to switch over to the new technology. She educated us, persuaded us and also
+          gave the COMPLETE support in developing this NEW software. This is a BIG leap forward for the League.</p>
+        <p> By adopting the NEW technology GSB Scholarship League processed applications and completed disbursement of
+          Scholarship by November 2020, as in the previous years. But for the timely help from Smt Vijaya Kamath, this
+          would not have been possible.</p>
+        <p>At the monthly meeting held on 6th December 20, Smt.Gita Pai, Chairperson, presented the following details of
+          Student scholarship disbursement.</p>
+        <p>: Current financial year, 2020-2021, total 2232 students from all stream of education were awarded Free
+          Scholarship</p>
+        <p>: Sri S.N.Pai supported 3 students , Two from NITK and one from Karwar Medical College. Dr.Sanjay Kamath
+          supported 2 students, Kamal Kamath one student and Prof.C.J.Pai supported one student.</p>
+        <p>: Sri.Uday Shanbhag & family supported 3 students. Mr.Prabhakar Kamath supported one student.</p>
+        <p>: Special awards would be given to two students as in the past, the highest scorer in 10th standard and the
+          other from 12th standard through Late Sri Gajanan Prabhu's endowment. *</p>
+        <p>All student beneficiaries from all categories are intimated</p>
+        <p>: Prabhu Family Charitable Trust beneficiaries are yet to be finalized.</p>
+        <p>At the Monthly Meeting held on 6th of December, applications received for Patronship for the past two months
+          were taken on record.</p>
+        <p>Trustee, Ramesh Bhandarkar updated about some more funds available for investment and that to be invested in
+          short term deposit.</p>
+        <p>Sri Ganesh Shanbhag, will finalize the audit part of the year and give a presentation during the next
+          month.""</p>
+        <br>
+        <p>
+          <span style="font-weight: 500;">Visit:</span><a href=""> www.gsbscholarshipleague.org</a>
+        </p>
+        <p>
+          <span style="font-weight: 500;">E-mail id:</span><a href=""> info@gsbscholarshipleague.org</a>
+        </p>
+        <p>This website was created and regularly updated by 24 Frames Digital for free .
+          <br>
+          For more on 24 Frames Digital contact Ms. Minoo N. Shah, Tel: (022) 23719111 or visit www.24framesdigital.com
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row p-b4">
+          <div class="col-md col-6">
+            <img src="images/logo/gsb.png">
+            <p class="no-mr p-t2"> <a href="tel:02235776611">
+                <form action="">
+                  <i class="fas fa-phone-alt mr-r7"></i>
+                  <span class="pd-l"> (022)35776611</span>
+                </form>
+              </a></p>
+            <p class="no-mr"> 
+              <span class="pd-l">
+                <i class="fas fa-globe mr-r7"></i>
+                <a href="www.gsbscholarshipleague.org"><span>www.gsbscholarshipleague.org</span></a>
+              </span></p>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6">
+            <ul>
+              <li><a class="txt-White" href="index.html">Home</a></li>
+              <li><a class="txt-White" href="mcp.html">Managing Committee Profile</a></li>
+              <li><a class="txt-White" href="performance.html">Performance</a></li>
+              <li><a class="txt-White" href="leagueHistory.html">League's History</a></li>
+              <li><a class="txt-White" href="leagueProfile.html">League's Profile</a></li>
+              <li><a class="txt-White" href="events.html">Events</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6">
+            <ul>
+              <li><a class="txt-White" href="help.html">How Can You Help ?</a></li>
+              <li><a class="txt-White" href="ourBankers.html">Our Bankers</a></li>
+              <!-- <li><a class="txt-White" href="contribution.html">Foreign Contribution</a></li> -->
+              <li><a class="txt-White" href="highlights.html">Highlight of the month</a></li>
+              <li><a class="txt-White" href="annualReport.html">Annual Report</a></li>
+              <li><a class="txt-White" href="membership.html">Membership</a></li>
+              <li><a class="txt-White" href="listOfDonor.html">Honours List of Donors</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6">
+            <ul>
+              <li><a class="txt-White" href="New_Endowment.html">New Endowment</a></li>
+              <li><a class="txt-White" href="actionPlan.html">Action Plan</a></li>
+              <li><a class="txt-White" href="downloadForm.html">Guidelines to students</a></li>
+              <li><a class="txt-White" href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <span>Copyright@2008 GSB Scholarship League. All rights reserved.</span>
+        <span class="txt-right"><a href="https://www.24framesdigital.com/" target="_blank">Powered by 24 Frames
+            Digital</a></span>
+      </div>
+    </div>
+    <span class="scroll-top-arrow"><a><i class="fas fa-angle-up"></i></a></span>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
